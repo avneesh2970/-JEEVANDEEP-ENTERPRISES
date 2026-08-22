@@ -95,10 +95,10 @@ export const CorporateVideoModal: React.FC<CorporateVideoModalProps> = ({
             <div className="flex items-center gap-3">
               <span className="w-3 h-3 rounded-full bg-[#fea619] animate-pulse" />
               <div>
-                <h3 className="font-['Manrope'] text-base font-bold text-white leading-tight">
+                <h3 className=" text-base font-bold text-white leading-tight">
                   Jeevandeep Enterprises — Corporate Video Presentation
                 </h3>
-                <p className="text-xs text-slate-400 font-['Inter']">
+                <p className="text-xs text-slate-400 ">
                   ISO 9001:2015 Certified Operations & Product Testing
                 </p>
               </div>
@@ -131,10 +131,10 @@ export const CorporateVideoModal: React.FC<CorporateVideoModalProps> = ({
               <span className="text-xs font-bold text-[#fea619] uppercase tracking-wider bg-[#fea619]/10 px-2.5 py-0.5 rounded border border-[#fea619]/20 inline-block mb-2">
                 4K Corporate Video
               </span>
-              <h4 className="font-['Manrope'] text-lg font-bold text-white mb-1">
+              <h4 className=" text-lg font-bold text-white mb-1">
                 {track.title}
               </h4>
-              <p className="font-['Inter'] text-xs text-slate-300 line-clamp-2 max-w-2xl">
+              <p className=" text-xs text-slate-300 line-clamp-2 max-w-2xl">
                 {track.description}
               </p>
             </div>

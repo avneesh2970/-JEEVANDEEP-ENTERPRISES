@@ -538,8 +538,8 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     id: 'faq-4',
-    question: 'What are your delivery timelines across India?',
-    answer: 'Standard in-stock items typically ship within 24-48 hours from our central Mumbai warehouse. Priority next-flight dispatch is available for emergency plant shutdowns.',
+    question: 'What are your delivery timelines for Dehradun and Uttarakhand?',
+    answer: 'For local Dehradun orders, same-day or next-day delivery is typically available. For other locations in Uttarakhand and across India, standard dispatch is within 24–48 hours via trusted logistics partners.',
     category: 'Logistics'
   },
   {
@@ -547,8 +547,39 @@ export const FAQ_ITEMS: FaqItem[] = [
     question: 'Do you provide Mill Test Certificates (MTC 3.1) for GI Sheets and Tie Rods?',
     answer: 'All shipments are accompanied by Manufacturer Test Certificates (MTC / 3.1 Mill Test Reports), ISO 9001 compliance dossiers, and third-party inspection readiness (TUV, DNV, BV).',
     category: 'Quality & Specs'
+  },
+  {
+    id: 'faq-6',
+    question: 'What is the minimum order quantity (MOQ) for your products?',
+    answer: 'MOQ varies by product category. Fasteners and hardware items can be ordered in small lots, while insulation sheets and rubber matting typically have a minimum of one roll or sheet. Contact us for exact MOQ details on specific items.',
+    category: 'Commercial'
+  },
+  {
+    id: 'faq-7',
+    question: 'Do you offer custom cutting and sizing for insulation sheets and rubber mats?',
+    answer: 'Yes. We offer custom cutting to size for Nitrile Rubber, XLPE, Glass Wool, and dielectric safety mats. Simply share your required dimensions and we will supply pre-cut material ready for installation.',
+    category: 'Custom Engineering'
+  },
+  {
+    id: 'faq-8',
+    question: 'Do you supply products on GST invoice for businesses?',
+    answer: 'Absolutely. All transactions are billed with proper GST invoices. We support B2B procurement with full documentation including GST tax invoices, e-way bills, and delivery challans for audit compliance.',
+    category: 'Commercial'
+  },
+  {
+    id: 'faq-9',
+    question: 'Can you supply products to government departments and PSUs?',
+    answer: 'Yes, we actively supply to government departments, PSUs, defence establishments, and public sector contractors. We are registered with GeM portal and can participate in GeM orders and government tenders.',
+    category: 'Commercial'
+  },
+  {
+    id: 'faq-10',
+    question: 'Do you provide after-sales technical support and product guidance?',
+    answer: 'Yes. Our technical team provides free post-purchase guidance on installation methods, compatibility checks, and product selection for specific applications. Reach us via WhatsApp, phone, or email for prompt assistance.',
+    category: 'Custom Engineering'
   }
 ];
+
 
 export const INDUSTRY_SECTORS: IndustrySector[] = [
   {

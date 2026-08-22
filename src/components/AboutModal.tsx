@@ -58,10 +58,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                 <Building className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-['Manrope'] text-xl md:text-2xl font-bold text-white leading-tight">
+                <h3 className=" text-xl md:text-2xl font-bold text-white leading-tight">
                   About Jeevandeep Enterprises
                 </h3>
-                <p className="font-['Inter'] text-xs text-slate-300">
+                <p className=" text-xs text-slate-300">
                   Two Decades of Industrial Reliability, Precision Engineering & Certified Material Supply
                 </p>
               </div>
@@ -87,7 +87,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as any)}
-                className={`px-4 py-2 rounded-lg text-xs font-['Inter'] font-semibold transition-all cursor-pointer ${
+                className={`px-4 py-2 rounded-lg text-xs  font-semibold transition-all cursor-pointer ${
                   activeTab === tab.id
                     ? 'bg-[#002147] text-white shadow-xs'
                     : 'bg-white text-[#44474e] hover:bg-[#e0e3e5] border border-[#c4c6cf]/60'
@@ -113,13 +113,13 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                       <ShieldCheck className="w-4 h-4 text-[#855300]" />
                       ISO 9001:2015 Certified Operations
                     </span>
-                    <h4 className="font-['Manrope'] text-2xl font-bold text-[#002147]">
+                    <h4 className=" text-2xl font-bold text-[#002147]">
                       Building Confidence in Critical Infrastructure Since 2001
                     </h4>
-                    <p className="font-['Inter'] text-sm text-[#44474e] leading-relaxed">
+                    <p className=" text-sm text-[#44474e] leading-relaxed">
                       Jeevandeep Enterprises was established with a singular mission: to bridge the gap between technical engineering specifications and reliable material delivery in India’s fast-paced industrial market.
                     </p>
-                    <p className="font-['Inter'] text-sm text-[#44474e] leading-relaxed">
+                    <p className=" text-sm text-[#44474e] leading-relaxed">
                       Today, we operate a 50,000 Sq. Ft. central fulfillment hub in Mumbai stocking over 5,000 certified SKUs across high-temperature thermal insulation, dielectric rubber safety matting, electrical cable support systems, and high-tensile Grade B7/2H fasteners.
                     </p>
                   </div>
@@ -142,10 +142,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                     <div className="w-10 h-10 rounded-lg bg-[#002147]/10 text-[#002147] flex items-center justify-center font-bold">
                       <Award className="w-5 h-5 text-[#fea619]" />
                     </div>
-                    <h5 className="font-['Manrope'] text-lg font-bold text-[#000a1e]">
+                    <h5 className=" text-lg font-bold text-[#000a1e]">
                       Certified Standards
                     </h5>
-                    <p className="font-['Inter'] text-xs text-[#44474e] leading-relaxed">
+                    <p className=" text-xs text-[#44474e] leading-relaxed">
                       Every batch undergoes strict quality control conforming to ASTM C612, IS 8183, IS 15652, and ASME B16.20 specifications.
                     </p>
                   </div>
@@ -154,10 +154,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                     <div className="w-10 h-10 rounded-lg bg-[#002147]/10 text-[#002147] flex items-center justify-center font-bold">
                       <Truck className="w-5 h-5 text-[#fea619]" />
                     </div>
-                    <h5 className="font-['Manrope'] text-lg font-bold text-[#000a1e]">
+                    <h5 className=" text-lg font-bold text-[#000a1e]">
                       Express B2B Logistics
                     </h5>
-                    <p className="font-['Inter'] text-xs text-[#44474e] leading-relaxed">
+                    <p className=" text-xs text-[#44474e] leading-relaxed">
                       Integrated logistics network ensuring 24-48h dispatch for standard items and same-day priority handling for emergency plant shutdowns.
                     </p>
                   </div>
@@ -166,10 +166,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                     <div className="w-10 h-10 rounded-lg bg-[#002147]/10 text-[#002147] flex items-center justify-center font-bold">
                       <FileText className="w-5 h-5 text-[#fea619]" />
                     </div>
-                    <h5 className="font-['Manrope'] text-lg font-bold text-[#000a1e]">
+                    <h5 className=" text-lg font-bold text-[#000a1e]">
                       Mill Test Certificates
                     </h5>
-                    <p className="font-['Inter'] text-xs text-[#44474e] leading-relaxed">
+                    <p className=" text-xs text-[#44474e] leading-relaxed">
                       Complete material traceability with MTC 3.1 test reports, chemical analysis dossiers, and third-party inspection readiness.
                     </p>
                   </div>
@@ -183,7 +183,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                 animate={{ opacity: 1, y: 0 }}
                 className="space-y-6"
               >
-                <h4 className="font-['Manrope'] text-xl font-bold text-[#002147]">
+                <h4 className=" text-xl font-bold text-[#002147]">
                   Two Decades of Growth & Milestones
                 </h4>
 
@@ -194,10 +194,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                       <span className="text-xs font-mono font-bold bg-[#002147] text-white px-2.5 py-1 rounded">
                         {item.year}
                       </span>
-                      <h5 className="font-['Manrope'] text-lg font-bold text-[#000a1e] mt-2">
+                      <h5 className=" text-lg font-bold text-[#000a1e] mt-2">
                         {item.title}
                       </h5>
-                      <p className="font-['Inter'] text-xs sm:text-sm text-[#44474e] mt-1 leading-relaxed max-w-2xl">
+                      <p className=" text-xs sm:text-sm text-[#44474e] mt-1 leading-relaxed max-w-2xl">
                         {item.desc}
                       </p>
                     </div>
@@ -212,7 +212,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                 animate={{ opacity: 1, y: 0 }}
                 className="space-y-6"
               >
-                <h4 className="font-['Manrope'] text-xl font-bold text-[#002147]">
+                <h4 className=" text-xl font-bold text-[#002147]">
                   Executive Management Team
                 </h4>
 
@@ -223,17 +223,17 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                         {person.name[0]}
                       </div>
                       <div>
-                        <h5 className="font-['Manrope'] text-lg font-bold text-[#000a1e]">
+                        <h5 className=" text-lg font-bold text-[#000a1e]">
                           {person.name}
                         </h5>
-                        <p className="text-xs font-semibold text-[#855300] font-['Inter']">
+                        <p className="text-xs font-semibold text-[#855300] ">
                           {person.role}
                         </p>
                         <span className="inline-block text-[10px] font-mono font-bold text-slate-500 bg-white px-2 py-0.5 rounded border border-[#c4c6cf] mt-1">
                           {person.experience}
                         </span>
                       </div>
-                      <p className="font-['Inter'] text-xs text-[#44474e] leading-relaxed pt-2 border-t border-[#e0e3e5]">
+                      <p className=" text-xs text-[#44474e] leading-relaxed pt-2 border-t border-[#e0e3e5]">
                         {person.bio}
                       </p>
                     </div>
@@ -248,17 +248,17 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                 animate={{ opacity: 1, y: 0 }}
                 className="space-y-6"
               >
-                <h4 className="font-['Manrope'] text-xl font-bold text-[#002147]">
+                <h4 className=" text-xl font-bold text-[#002147]">
                   Quality Assurance & Testing Standards
                 </h4>
 
                 <div className="bg-[#f7f9fb] p-6 rounded-xl border border-[#e0e3e5] grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-3">
-                    <h5 className="font-['Manrope'] text-base font-bold text-[#002147] flex items-center gap-2">
+                    <h5 className=" text-base font-bold text-[#002147] flex items-center gap-2">
                       <CheckCircle2 className="w-5 h-5 text-[#fea619]" />
                       Testing Facilities & Capabilities
                     </h5>
-                    <ul className="space-y-2 font-['Inter'] text-xs text-[#44474e] list-disc pl-5">
+                    <ul className="space-y-2  text-xs text-[#44474e] list-disc pl-5">
                       <li>Dielectric Breakdown Voltage testing up to 45 kV/mm (IS 15652 / IEC 61111)</li>
                       <li>Thermal Conductivity evaluation (ASTM C612 / IS 8183)</li>
                       <li>High-Pressure Hydrostatic Gasket Sealing analysis (ASME B16.20)</li>
@@ -267,11 +267,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                   </div>
 
                   <div className="space-y-3">
-                    <h5 className="font-['Manrope'] text-base font-bold text-[#002147] flex items-center gap-2">
+                    <h5 className=" text-base font-bold text-[#002147] flex items-center gap-2">
                       <FileText className="w-5 h-5 text-[#fea619]" />
                       Compliance Dossiers
                     </h5>
-                    <ul className="space-y-2 font-['Inter'] text-xs text-[#44474e] list-disc pl-5">
+                    <ul className="space-y-2  text-xs text-[#44474e] list-disc pl-5">
                       <li>ISO 9001:2015 Quality Management System Certificate</li>
                       <li>Batch Traceability & 3.1 Mill Test Certificates (MTC)</li>
                       <li>Flame Propagation Class 0 & Class 1 certification (BS 476)</li>
@@ -285,7 +285,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({
 
           {/* Modal Footer */}
           <div className="bg-[#f2f4f6] px-6 py-4 border-t border-[#c4c6cf] flex items-center justify-between shrink-0">
-            <p className="text-xs text-[#74777f] font-['Inter']">
+            <p className="text-xs text-[#74777f] ">
               Visit our central fulfillment hub in Mumbai or request quality assurance documentation.
             </p>
             <div className="flex items-center gap-3">
@@ -294,14 +294,14 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                   onClose();
                   onRequestQuote();
                 }}
-                className="bg-[#fea619] hover:bg-[#e69310] text-[#002147] text-xs font-['Inter'] font-extrabold uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-2xs cursor-pointer flex items-center gap-1.5"
+                className="bg-[#fea619] hover:bg-[#e69310] text-[#002147] text-xs  font-extrabold uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-2xs cursor-pointer flex items-center gap-1.5"
               >
                 <span>Request B2B Quotation</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
               <button
                 onClick={onClose}
-                className="bg-[#002147] text-white text-xs font-['Inter'] font-bold px-4 py-2.5 rounded-lg hover:bg-[#000a1e] cursor-pointer"
+                className="bg-[#002147] text-white text-xs  font-bold px-4 py-2.5 rounded-lg hover:bg-[#000a1e] cursor-pointer"
               >
                 Close
               </button>

@@ -101,7 +101,7 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
   ];
 
   return (
-    <div className="bg-[#f7f9fb] text-[#191c1e] font-['Inter'] min-h-screen">
+    <div className="bg-[#f7f9fb] text-[#191c1e]  min-h-screen">
       {/* Page Hero Header */}
       <section className="bg-[#00132b] text-white py-16 md:py-24 border-b border-[#c4c6cf] relative overflow-hidden text-left">
         <div className="absolute inset-0 bg-gradient-to-r from-[#000a1a] via-[#00132b] to-[#002147] opacity-95" />
@@ -109,7 +109,7 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
 
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12">
           {/* Breadcrumbs */}
-          <div className="flex items-center gap-2 text-xs text-slate-400 mb-6 font-['Inter']">
+          <div className="flex items-center gap-2 text-xs text-slate-400 mb-6 ">
             <button onClick={onNavigateHome} className="hover:text-white transition-colors cursor-pointer">
               Home
             </button>
@@ -128,11 +128,11 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
               Targeted Industry Solutions
             </span>
 
-            <h1 className="font-['Manrope'] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h1 className=" text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Industries & Key Sectors Served
             </h1>
 
-            <p className="font-['Inter'] text-base md:text-lg text-slate-300 leading-relaxed">
+            <p className=" text-base md:text-lg text-slate-300 leading-relaxed">
               Certified B2B supply architecture powering Power Generation, Petrochemical Refineries, Commercial MEP, Manufacturing, and Infrastructure Projects across India.
             </p>
           </motion.div>
@@ -140,19 +140,19 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
           {/* Quick Metrics Bar */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-8 border-t border-white/15">
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">5 Key Sectors</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">5 Key Sectors</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Dedicated Supply Architecture</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">120+ Projects</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">120+ Projects</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Major Plant Footprint</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">100% Certified</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">100% Certified</div>
               <div className="text-xs text-slate-300 font-medium mt-1">MTC 3.1 & ISO 9001</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">24-48h Dispatch</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">24-48h Dispatch</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Pan-India Express Hub</div>
             </div>
           </div>
@@ -182,19 +182,19 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
                       <span className="text-[11px] font-mono font-bold bg-[#fea619]/20 text-[#855300] px-2.5 py-0.5 rounded">
                         {sector.badge}
                       </span>
-                      <h2 className="font-['Manrope'] text-2xl sm:text-3xl font-bold text-[#002147] mt-1">
+                      <h2 className=" text-2xl sm:text-3xl font-bold text-[#002147] mt-1">
                         {sector.title}
                       </h2>
                     </div>
                   </div>
 
-                  <p className="font-['Inter'] text-sm sm:text-base text-[#44474e] leading-relaxed">
+                  <p className=" text-sm sm:text-base text-[#44474e] leading-relaxed">
                     {sector.description}
                   </p>
 
                   {/* Key Supplies List */}
                   <div>
-                    <h4 className="font-['Manrope'] text-xs font-bold uppercase tracking-wider text-[#002147] mb-3">
+                    <h4 className=" text-xs font-bold uppercase tracking-wider text-[#002147] mb-3">
                       Primary Certified Supplies:
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -218,7 +218,7 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
                   </div>
 
                   {/* Featured Project Footprint */}
-                  <div className="bg-[#f7f9fb] p-4 rounded-xl border-l-4 border-[#fea619] text-xs font-['Inter'] text-[#44474e]">
+                  <div className="bg-[#f7f9fb] p-4 rounded-xl border-l-4 border-[#fea619] text-xs  text-[#44474e]">
                     <span className="font-bold text-[#002147] block mb-1">Featured Site Footprint:</span>
                     {sector.featuredProject}
                   </div>
@@ -226,7 +226,7 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
                   {/* Action CTA Button */}
                   <button
                     onClick={() => onRequestQuote(sector.title)}
-                    className="inline-flex items-center gap-2 bg-[#002147] hover:bg-[#000a1e] text-white font-['Inter'] text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer border border-white/10"
+                    className="inline-flex items-center gap-2 bg-[#002147] hover:bg-[#000a1e] text-white  text-xs font-bold uppercase tracking-wider px-6 py-3 rounded-xl shadow-sm hover:shadow-md transition-all cursor-pointer border border-white/10"
                   >
                     <span>Request Quotation for {sector.title.split(' ')[0]}</span>
                     <ArrowRight className="w-4 h-4 text-[#fea619]" />
@@ -255,24 +255,24 @@ export const IndustriesPage: React.FC<IndustriesPageProps> = ({
       <section className="py-16 bg-[#00132b] text-white border-t border-[#c4c6cf] text-left">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl">
-            <h3 className="font-['Manrope'] text-2xl sm:text-3xl font-extrabold text-white">
+            <h3 className=" text-2xl sm:text-3xl font-extrabold text-white">
               Turnkey Rate Contracts & Annual Supply Schedules
             </h3>
-            <p className="font-['Inter'] text-sm text-slate-300 leading-relaxed">
+            <p className=" text-sm text-slate-300 leading-relaxed">
               We offer structured Annual Rate Contracts (ARC) with dedicated warehouse safety stock allocations for power plants, refineries, and major MEP EPC contractors.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4 shrink-0">
             <button
               onClick={() => onRequestQuote('Annual Rate Contract')}
-              className="bg-[#fea619] hover:bg-[#e69310] text-[#002147] font-['Inter'] text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-xl shadow-lg flex items-center gap-2 cursor-pointer"
+              className="bg-[#fea619] hover:bg-[#e69310] text-[#002147]  text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-xl shadow-lg flex items-center gap-2 cursor-pointer"
             >
               <span>Setup Rate Contract</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             <button
               onClick={onExploreProducts}
-              className="bg-white/10 hover:bg-white/20 text-white font-['Inter'] text-xs font-semibold uppercase tracking-wider px-7 py-3.5 rounded-xl border border-white/20 cursor-pointer"
+              className="bg-white/10 hover:bg-white/20 text-white  text-xs font-semibold uppercase tracking-wider px-7 py-3.5 rounded-xl border border-white/20 cursor-pointer"
             >
               Browse Catalog
             </button>

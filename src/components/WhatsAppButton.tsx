@@ -7,7 +7,7 @@ export const WhatsAppButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
 
-  const phone = '919876543210'; // WhatsApp B2B helpline
+  const phone = '919411487540'; // WhatsApp B2B helpline
 
   const handleOpenWhatsApp = (customMsg?: string) => {
     const text = customMsg || message || 'Hello Jeevandeep Enterprises, I would like to inquire about industrial products and request a quote.';
@@ -38,10 +38,10 @@ export const WhatsAppButton: React.FC = () => {
                   <span className="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-400 border-2 border-[#075E54]" />
                 </div>
                 <div>
-                  <h4 className="font-['Manrope'] text-sm font-bold text-white leading-tight">
+                  <h4 className=" text-sm font-bold text-white leading-tight">
                     Jeevandeep Sales Support
                   </h4>
-                  <p className="font-['Inter'] text-[11px] text-emerald-100">
+                  <p className=" text-[11px] text-emerald-100">
                     Typically replies within 5 mins
                   </p>
                 </div>
@@ -56,7 +56,7 @@ export const WhatsAppButton: React.FC = () => {
             </div>
 
             {/* Chat Body */}
-            <div className="p-4 bg-[#e5ddd5]/30 space-y-3 font-['Inter'] text-xs text-[#191c1e]">
+            <div className="p-4 bg-[#e5ddd5]/30 space-y-3  text-xs text-[#191c1e]">
               <div className="bg-white p-3 rounded-xl rounded-tl-none border border-[#e0e3e5] shadow-2xs space-y-1">
                 <p className="font-semibold text-[#002147]">
                   Hello! 👋 Welcome to Jeevandeep Enterprises.
@@ -92,7 +92,7 @@ export const WhatsAppButton: React.FC = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleOpenWhatsApp()}
                 placeholder="Type product name or inquiry..."
-                className="grow bg-[#f7f9fb] border border-[#c4c6cf] focus:border-[#075E54] rounded-lg px-3 py-2 text-xs text-[#191c1e] outline-hidden font-['Inter']"
+                className="grow bg-[#f7f9fb] border border-[#c4c6cf] focus:border-[#075E54] rounded-lg px-3 py-2 text-xs text-[#191c1e] outline-hidden "
               />
               <button
                 onClick={() => handleOpenWhatsApp()}
@@ -127,7 +127,7 @@ export const WhatsAppButton: React.FC = () => {
 
         {/* Hover Tooltip */}
         {!isOpen && (
-          <div className="absolute right-16 top-1/2 -translate-y-1/2 bg-[#002147] text-white text-xs font-['Inter'] font-semibold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-1.5">
+          <div className="absolute right-16 top-1/2 -translate-y-1/2 bg-[#002147] text-white text-xs  font-semibold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
             <span>Chat on WhatsApp (Sales Online)</span>
           </div>

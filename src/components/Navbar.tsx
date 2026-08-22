@@ -36,8 +36,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About Us' },
     { id: 'products', label: 'Products' },
-    { id: 'industries', label: 'Industries' },
-    { id: 'applications', label: 'Applications' },
+    // { id: 'industries', label: 'Industries' },
+    // { id: 'applications', label: 'Applications' },
     { id: 'contact', label: 'Contact Us' },
   ];
 
@@ -66,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center gap-3 shrink-0">
           <button
             onClick={() => handleNavClick('home')}
-            className="text-left font-['Manrope'] text-base sm:text-lg lg:text-xl font-extrabold tracking-tight text-[#000a1e] hover:text-[#002147] transition-colors flex items-center gap-2.5 cursor-pointer group"
+            className="text-left  text-base sm:text-lg lg:text-xl font-extrabold tracking-tight text-[#000a1e] hover:text-[#002147] transition-colors flex items-center gap-2.5 cursor-pointer group"
           >
             <motion.div
               whileHover={{ rotate: 5, scale: 1.05 }}
@@ -76,7 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </motion.div>
             <div className="flex flex-col">
               <span className="leading-none text-[#002147] font-black">JEEVANDEEP ENTERPRISES</span>
-              <span className="text-[10px] font-['Inter'] font-semibold text-[#74777f] tracking-widest uppercase mt-0.5 hidden sm:block">
+              <span className="text-[10px]  font-semibold text-[#74777f] tracking-widest uppercase mt-0.5 hidden sm:block">
                 Industrial Supplies & Engineering
               </span>
             </div>
@@ -91,7 +91,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`relative font-['Inter'] text-xs xl:text-[13px] font-bold tracking-wider transition-all duration-200 uppercase py-2 cursor-pointer ${
+                className={`relative  text-xs xl:text-[13px] font-bold tracking-wider transition-all duration-200 uppercase py-2 cursor-pointer ${
                   isActive
                     ? 'text-[#002147]'
                     : 'text-[#44474e] hover:text-[#000a1e]'
@@ -114,9 +114,9 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="hidden md:flex items-center gap-2 shrink-0">
           {/* Quick Phone Call Button */}
           <button
-            onClick={() => handleCopyQuick('+919876543210', 'phone')}
+            onClick={() => handleCopyQuick('+919411487540', 'phone')}
             className="text-[#44474e] hover:text-[#002147] transition-all p-2 rounded-full hover:bg-[#eceef0] relative group cursor-pointer"
-            title="Call Support: +91 98765 43210"
+            title="Call Support: +91 94114 87540"
             aria-label="Call Directory"
           >
             {copiedType === 'phone' ? (
@@ -127,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
             )}
             <span className="absolute -bottom-9 left-1/2 -translate-x-1/2 bg-[#002147] text-white text-[10px] py-1 px-2.5 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50 font-mono">
-              +91 98765 43210
+              +91 94114 87540
             </span>
           </button>
 
@@ -155,7 +155,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             whileHover={{ scale: 1.03, translateY: -1 }}
             whileTap={{ scale: 0.97 }}
             onClick={onOpenQuoteModal}
-            className="bg-[#002147] hover:bg-[#000a1e] text-white font-['Inter'] text-[11px] xl:text-[12px] font-bold uppercase tracking-wider px-4 xl:px-5 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all ml-1.5 flex items-center gap-2 cursor-pointer border border-white/10"
+            className="bg-[#002147] hover:bg-[#000a1e] text-white  text-[11px] xl:text-[12px] font-bold uppercase tracking-wider px-4 xl:px-5 py-2.5 rounded-lg shadow-sm hover:shadow-md transition-all ml-1.5 flex items-center gap-2 cursor-pointer border border-white/10"
           >
             <span>Get a Quote</span>
             <ArrowRight className="w-3.5 h-3.5 text-[#fea619]" />
@@ -195,7 +195,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
-                  className={`text-left py-3 px-4 rounded-lg font-['Inter'] text-[14px] font-bold tracking-wide transition-colors cursor-pointer ${
+                  className={`text-left py-3 px-4 rounded-lg  text-[14px] font-bold tracking-wide transition-colors cursor-pointer ${
                     activeTab === item.id
                       ? 'bg-[#002147]/10 text-[#002147] border-l-4 border-[#fea619]'
                       : 'text-[#44474e] hover:bg-[#f2f4f6] hover:text-[#000a1e]'
@@ -206,10 +206,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               ))}
 
               <div className="pt-4 border-t border-[#e0e3e5] flex flex-col gap-3">
-                <div className="flex items-center justify-between text-xs text-[#44474e] px-1 font-['Inter']">
+                <div className="flex items-center justify-between text-xs text-[#44474e] px-1 ">
                   <span>Sales Hotline:</span>
-                  <a href="tel:+919876543210" className="font-bold text-[#002147] hover:underline font-mono">
-                    +91 98765 43210
+                  <a href="tel:+919411487540" className="font-bold text-[#002147] hover:underline font-mono">
+                    +91 94114 87540
                   </a>
                 </div>
 
@@ -219,7 +219,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     setIsMobileMenuOpen(false);
                     onOpenQuoteModal();
                   }}
-                  className="w-full bg-[#fea619] hover:bg-[#e69310] text-[#002147] font-['Inter'] text-[13px] font-extrabold uppercase tracking-wider py-3.5 rounded-lg text-center shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full bg-[#fea619] hover:bg-[#e69310] text-[#002147]  text-[13px] font-extrabold uppercase tracking-wider py-3.5 rounded-lg text-center shadow-md flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>Request a Quote</span>
                   <ArrowRight className="w-4 h-4" />

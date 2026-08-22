@@ -28,7 +28,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
   ];
 
   return (
-    <div className="bg-[#f7f9fb] text-[#191c1e] font-['Inter'] min-h-screen">
+    <div className="bg-[#f7f9fb] text-[#191c1e]  min-h-screen">
       {/* Page Hero Header */}
       <section className="bg-[#00132b] text-white py-16 md:py-24 border-b border-[#c4c6cf] relative overflow-hidden text-left">
         {/* Background Overlay */}
@@ -37,7 +37,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12">
           {/* Breadcrumbs */}
-          <div className="flex items-center gap-2 text-xs text-slate-400 mb-6 font-['Inter']">
+          <div className="flex items-center gap-2 text-xs text-slate-400 mb-6 ">
             <button onClick={onNavigateHome} className="hover:text-white transition-colors cursor-pointer">
               Home
             </button>
@@ -56,11 +56,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               ISO 9001:2015 Certified Organization
             </span>
 
-            <h1 className="font-['Manrope'] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h1 className=" text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
               About Jeevandeep Enterprises
             </h1>
 
-            <p className="font-['Inter'] text-base md:text-lg text-slate-300 leading-relaxed">
+            <p className=" text-base md:text-lg text-slate-300 leading-relaxed">
               Two Decades of Industrial Reliability, Precision Engineering & Certified Material Supply across Power, Oil & Gas, HVAC, and Infrastructure sectors in India.
             </p>
           </motion.div>
@@ -68,19 +68,19 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           {/* Quick Metrics Bar */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-8 border-t border-white/15">
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">25+ Years</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">25+ Years</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Established 2001</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">50,000 Sq.Ft</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">50,000 Sq.Ft</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Mumbai Hub</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">ISO 9001</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">ISO 9001</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Certified System</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">5,000+ SKUs</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">5,000+ SKUs</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Ready for Dispatch</div>
             </div>
           </div>
@@ -101,23 +101,23 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               <span>Corporate Heritage</span>
             </div>
 
-            <h2 className="font-['Manrope'] text-2xl sm:text-3xl md:text-4xl font-bold text-[#002147] tracking-tight">
+            <h2 className=" text-2xl sm:text-3xl md:text-4xl font-bold text-[#002147] tracking-tight">
               Bridging Technical Specifications & High-Quality Industrial Supply
             </h2>
 
-            <p className="font-['Inter'] text-sm md:text-base text-[#44474e] leading-relaxed">
+            <p className=" text-sm md:text-base text-[#44474e] leading-relaxed">
               Founded in 2001 in Mumbai, Jeevandeep Enterprises has established itself as an indispensable B2B supply chain partner for engineering contractors, power utilities, petroleum refineries, and manufacturing plants across India.
             </p>
 
-            <p className="font-['Inter'] text-sm md:text-base text-[#44474e] leading-relaxed">
+            <p className=" text-sm md:text-base text-[#44474e] leading-relaxed">
               We specialize in technical thermal insulation (Rockwool & Ceramic Fiber), dielectric safety matting up to 33kV (IS 15652 / IEC 61111), NBR/EPDM industrial rubber, HDG cable tray systems, and ASTM A193 B7 stud bolts. Every item supplied is backed by complete Mill Test Certificates (MTC 3.1) and ISO 9001 compliance dossiers.
             </p>
 
             <div className="p-5 bg-white rounded-xl border-l-4 border-[#fea619] border border-[#c4c6cf]/80 shadow-2xs space-y-1">
-              <p className="font-['Manrope'] text-base font-bold text-[#002147]">
+              <p className=" text-base font-bold text-[#002147]">
                 ISO 9001:2015 Quality Management Systems Certified
               </p>
-              <p className="font-['Inter'] text-xs text-[#74777f]">
+              <p className=" text-xs text-[#74777f]">
                 Full lot traceability, chemical analysis reports, and third-party inspection readiness.
               </p>
             </div>
@@ -135,7 +135,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               alt="Jeevandeep Central Logistics Facility"
               className="w-full h-[400px] object-cover"
             />
-            <div className="absolute bottom-4 left-4 bg-[#002147]/95 text-white p-3 px-4 rounded-lg backdrop-blur-xs text-xs font-['Inter'] font-semibold flex items-center gap-2.5 border border-white/10">
+            <div className="absolute bottom-4 left-4 bg-[#002147]/95 text-white p-3 px-4 rounded-lg backdrop-blur-xs text-xs  font-semibold flex items-center gap-2.5 border border-white/10">
               <span className="w-2.5 h-2.5 rounded-full bg-[#fea619] animate-pulse" />
               <span>Central Fulfillment Hub • Mumbai Logistics Park</span>
             </div>
@@ -150,10 +150,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <span className="inline-block text-xs font-bold text-[#002147] uppercase tracking-wider bg-[#002147]/10 px-3.5 py-1 rounded-full mb-3">
               Journey of Growth
             </span>
-            <h2 className="font-['Manrope'] text-3xl sm:text-4xl font-extrabold text-[#002147] tracking-tight">
+            <h2 className=" text-3xl sm:text-4xl font-extrabold text-[#002147] tracking-tight">
               Company Milestone Timeline
             </h2>
-            <p className="font-['Inter'] text-sm sm:text-base text-[#44474e] max-w-xl mx-auto mt-2">
+            <p className=" text-sm sm:text-base text-[#44474e] max-w-xl mx-auto mt-2">
               Key developments that shaped Jeevandeep Enterprises over the last 25 years.
             </p>
           </div>
@@ -172,10 +172,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 <span className="text-xs font-mono font-bold bg-[#002147] text-white px-3 py-1 rounded shadow-2xs">
                   {item.year}
                 </span>
-                <h3 className="font-['Manrope'] text-xl font-bold text-[#000a1e] mt-3">
+                <h3 className=" text-xl font-bold text-[#000a1e] mt-3">
                   {item.title}
                 </h3>
-                <p className="font-['Inter'] text-sm text-[#44474e] mt-1.5 leading-relaxed max-w-3xl">
+                <p className=" text-sm text-[#44474e] mt-1.5 leading-relaxed max-w-3xl">
                   {item.desc}
                 </p>
               </motion.div>
@@ -190,10 +190,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           <span className="inline-block text-xs font-bold text-[#002147] uppercase tracking-wider bg-[#002147]/10 px-3.5 py-1 rounded-full mb-3">
             Experienced Team
           </span>
-          <h2 className="font-['Manrope'] text-3xl sm:text-4xl font-extrabold text-[#002147] tracking-tight">
+          <h2 className=" text-3xl sm:text-4xl font-extrabold text-[#002147] tracking-tight">
             Executive Leadership
           </h2>
-          <p className="font-['Inter'] text-sm sm:text-base text-[#44474e] max-w-xl mx-auto mt-2">
+          <p className=" text-sm sm:text-base text-[#44474e] max-w-xl mx-auto mt-2">
             Guided by industry veterans committed to quality compliance and client satisfaction.
           </p>
         </div>
@@ -213,17 +213,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 {person.name[0]}
               </div>
               <div>
-                <h3 className="font-['Manrope'] text-xl font-bold text-[#000a1e]">
+                <h3 className=" text-xl font-bold text-[#000a1e]">
                   {person.name}
                 </h3>
-                <p className="text-xs font-bold text-[#855300] font-['Inter'] mt-0.5">
+                <p className="text-xs font-bold text-[#855300]  mt-0.5">
                   {person.role}
                 </p>
                 <span className="inline-block text-[11px] font-mono font-semibold text-[#002147] bg-[#f2f4f6] px-2.5 py-0.5 rounded border border-[#e0e3e5] mt-2">
                   {person.experience}
                 </span>
               </div>
-              <p className="font-['Inter'] text-xs sm:text-sm text-[#44474e] leading-relaxed pt-3 border-t border-[#e0e3e5]">
+              <p className=" text-xs sm:text-sm text-[#44474e] leading-relaxed pt-3 border-t border-[#e0e3e5]">
                 {person.bio}
               </p>
             </motion.div>
@@ -240,14 +240,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 <ShieldCheck className="w-4 h-4 text-[#fea619]" />
                 In-House Quality Testing Desk
               </span>
-              <h2 className="font-['Manrope'] text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              <h2 className=" text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
                 Rigorous Material Testing & Certification
               </h2>
-              <p className="font-['Inter'] text-sm sm:text-base text-slate-300 leading-relaxed">
+              <p className=" text-sm sm:text-base text-slate-300 leading-relaxed">
                 Our Mumbai facility houses dedicated quality assurance equipment for evaluating dielectric breakdown voltages, thermal conductivity, and mechanical tensile strengths.
               </p>
 
-              <div className="space-y-3 font-['Inter'] text-xs sm:text-sm text-slate-200">
+              <div className="space-y-3  text-xs sm:text-sm text-slate-200">
                 <div className="flex items-center gap-3 bg-white/5 p-3 rounded-lg border border-white/10">
                   <CheckCircle2 className="w-4 h-4 text-[#fea619] shrink-0" />
                   <span>33kV Dielectric Voltage Proofing for IS 15652 Substation Mats</span>
@@ -264,23 +264,23 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             </div>
 
             <div className="lg:col-span-6 bg-white/5 p-8 rounded-2xl border border-white/15 backdrop-blur-md space-y-6">
-              <h3 className="font-['Manrope'] text-xl font-bold text-white border-b border-white/15 pb-4">
+              <h3 className=" text-xl font-bold text-white border-b border-white/15 pb-4">
                 Full Page B2B Quote & Logistics Actions
               </h3>
-              <p className="font-['Inter'] text-sm text-slate-300 leading-relaxed">
+              <p className=" text-sm text-slate-300 leading-relaxed">
                 Need urgent technical datasheets, MTC records, or immediate emergency dispatch for a plant turnaround?
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <button
                   onClick={onRequestQuote}
-                  className="bg-[#fea619] hover:bg-[#e69310] text-[#002147] font-['Inter'] text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-lg shadow-lg flex items-center gap-2 cursor-pointer"
+                  className="bg-[#fea619] hover:bg-[#e69310] text-[#002147]  text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-lg shadow-lg flex items-center gap-2 cursor-pointer"
                 >
                   <span>Request B2B Quote</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
                 <button
                   onClick={onExploreProducts}
-                  className="bg-white/10 hover:bg-white/20 text-white font-['Inter'] text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-lg border border-white/20 cursor-pointer"
+                  className="bg-white/10 hover:bg-white/20 text-white  text-xs font-semibold uppercase tracking-wider px-6 py-3.5 rounded-lg border border-white/20 cursor-pointer"
                 >
                   Browse Product Line
                 </button>

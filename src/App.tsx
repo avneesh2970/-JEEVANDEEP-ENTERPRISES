@@ -133,8 +133,8 @@ export default function App() {
 
   const handleDirectContact = (type: 'phone' | 'mail') => {
     if (type === 'phone') {
-      window.location.href = 'tel:+919876543210';
-      showToast('Connecting to Sales Hotline: +91 98765 43210');
+      window.location.href = 'tel:+919411487540';
+      showToast('Connecting to Sales Hotline: +91 94114 87540');
     } else {
       window.location.href = 'mailto:sales@jeevandeep.com';
       showToast('Opening email client for sales@jeevandeep.com');
@@ -153,7 +153,7 @@ export default function App() {
   };
 
   return (
-    <div className="bg-[#f7f9fb] text-[#191c1e] font-['Inter'] min-h-screen flex flex-col antialiased selection:bg-[#fea619]/30 selection:text-[#002147]">
+    <div className="bg-[#f7f9fb] text-[#191c1e]  min-h-screen flex flex-col antialiased selection:bg-[#fea619]/30 selection:text-[#002147]">
       {/* Sticky Top Navigation Bar */}
       <Navbar
         activeTab={activeTab}

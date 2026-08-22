@@ -139,7 +139,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
   ];
 
   return (
-    <div className="bg-[#f7f9fb] text-[#191c1e] font-['Inter'] min-h-screen">
+    <div className="bg-[#f7f9fb] text-[#191c1e]  min-h-screen">
       {/* Page Hero Header */}
       <section className="bg-[#00132b] text-white py-16 md:py-24 border-b border-[#c4c6cf] relative overflow-hidden text-left">
         <div className="absolute inset-0 bg-gradient-to-r from-[#000a1a] via-[#00132b] to-[#002147] opacity-95" />
@@ -147,7 +147,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
 
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12">
           {/* Breadcrumbs */}
-          <div className="flex items-center gap-2 text-xs text-slate-400 mb-6 font-['Inter']">
+          <div className="flex items-center gap-2 text-xs text-slate-400 mb-6 ">
             <button onClick={onNavigateHome} className="hover:text-white transition-colors cursor-pointer">
               Home
             </button>
@@ -166,11 +166,11 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
               Proven Industrial Performance
             </span>
 
-            <h1 className="font-['Manrope'] text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h1 className=" text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Industrial Applications & Engineering Solutions
             </h1>
 
-            <p className="font-['Inter'] text-base md:text-lg text-slate-300 leading-relaxed">
+            <p className=" text-base md:text-lg text-slate-300 leading-relaxed">
               Discover how our certified materials perform across critical thermal, dielectric, acoustic, electrical, and structural applications.
             </p>
           </motion.div>
@@ -178,19 +178,19 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
           {/* Quick Metrics Bar */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-8 border-t border-white/15">
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">6 Application Areas</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">6 Application Areas</div>
               <div className="text-xs text-slate-300 font-medium mt-1">High-Consequence Performance</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">33kV Tested</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">33kV Tested</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Dielectric Voltage Proof</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">Up to 1425°C</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">Up to 1425°C</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Thermal Insulation Rating</div>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-              <div className="font-['Manrope'] text-2xl font-extrabold text-[#fea619]">Class 0 Fire</div>
+              <div className=" text-2xl font-extrabold text-[#fea619]">Class 0 Fire</div>
               <div className="text-xs text-slate-300 font-medium mt-1">Certified Safety Standards</div>
             </div>
           </div>
@@ -229,21 +229,21 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
                     <div className="w-10 h-10 rounded-lg bg-[#fea619]/15 text-[#855300] flex items-center justify-center font-bold text-xl shrink-0">
                       {app.icon}
                     </div>
-                    <h3 className="font-['Manrope'] text-xl sm:text-2xl font-bold text-[#002147]">
+                    <h3 className=" text-xl sm:text-2xl font-bold text-[#002147]">
                       {app.title}
                     </h3>
                   </div>
 
-                  <p className="font-['Inter'] text-xs sm:text-sm text-[#44474e] leading-relaxed">
+                  <p className=" text-xs sm:text-sm text-[#44474e] leading-relaxed">
                     {app.description}
                   </p>
 
                   {/* Key Technical Advantages */}
                   <div>
-                    <h4 className="font-['Manrope'] text-xs font-bold uppercase tracking-wider text-[#002147] mb-2.5">
+                    <h4 className=" text-xs font-bold uppercase tracking-wider text-[#002147] mb-2.5">
                       Key Technical Advantages:
                     </h4>
-                    <ul className="space-y-2 font-['Inter'] text-xs text-[#44474e]">
+                    <ul className="space-y-2  text-xs text-[#44474e]">
                       {app.keyAdvantages.map((adv, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <CheckCircle2 className="w-3.5 h-3.5 text-[#fea619] shrink-0 mt-0.5" />
@@ -255,10 +255,10 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
 
                   {/* Recommended Products */}
                   <div className="bg-[#f7f9fb] p-4 rounded-xl border border-[#e0e3e5] space-y-2">
-                    <span className="font-['Manrope'] text-xs font-bold uppercase tracking-wider text-[#002147] block">
+                    <span className=" text-xs font-bold uppercase tracking-wider text-[#002147] block">
                       Recommended Stock Supplies:
                     </span>
-                    <div className="space-y-1 font-['Inter'] text-xs text-[#002147] font-semibold">
+                    <div className="space-y-1  text-xs text-[#002147] font-semibold">
                       {app.recommendedProducts.map((p, i) => (
                         <div key={i} className="flex items-center gap-1.5">
                           <span className="w-1.5 h-1.5 rounded-full bg-[#fea619]" />
@@ -284,7 +284,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
               <div className="p-6 pt-0">
                 <button
                   onClick={() => onRequestQuote(app.title)}
-                  className="w-full bg-[#002147] hover:bg-[#000a1e] text-white font-['Inter'] text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer border border-white/10"
+                  className="w-full bg-[#002147] hover:bg-[#000a1e] text-white  text-xs font-bold uppercase tracking-wider py-3.5 rounded-xl shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer border border-white/10"
                 >
                   <span>Request Quote for {app.title.split(' ')[0]} Application</span>
                   <ArrowRight className="w-4 h-4 text-[#fea619]" />
@@ -299,24 +299,24 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({
       <section className="py-16 bg-[#00132b] text-white border-t border-[#c4c6cf] text-left">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl">
-            <h3 className="font-['Manrope'] text-2xl sm:text-3xl font-extrabold text-white">
+            <h3 className=" text-2xl sm:text-3xl font-extrabold text-white">
               Need Custom Technical Fabrications or Dimensional Cutting?
             </h3>
-            <p className="font-['Inter'] text-sm text-slate-300 leading-relaxed">
+            <p className=" text-sm text-slate-300 leading-relaxed">
               Our engineering team provides pre-slit insulation tubes, custom CNC gasket punching, and specialized material testing reports for your specific project applications.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4 shrink-0">
             <button
               onClick={() => onRequestQuote('Custom Fabrication Consultation')}
-              className="bg-[#fea619] hover:bg-[#e69310] text-[#002147] font-['Inter'] text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-xl shadow-lg flex items-center gap-2 cursor-pointer"
+              className="bg-[#fea619] hover:bg-[#e69310] text-[#002147]  text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-xl shadow-lg flex items-center gap-2 cursor-pointer"
             >
               <span>Consult Engineering Desk</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             <button
               onClick={onExploreProducts}
-              className="bg-white/10 hover:bg-white/20 text-white font-['Inter'] text-xs font-semibold uppercase tracking-wider px-7 py-3.5 rounded-xl border border-white/20 cursor-pointer"
+              className="bg-white/10 hover:bg-white/20 text-white  text-xs font-semibold uppercase tracking-wider px-7 py-3.5 rounded-xl border border-white/20 cursor-pointer"
             >
               Browse Catalog
             </button>

@@ -15,7 +15,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ title, onClose }) => {
         <div className="bg-[#002147] text-white px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <ShieldCheck className="w-5 h-5 text-[#fea619]" />
-            <h3 className="font-['Manrope'] text-lg font-bold text-white">
+            <h3 className=" text-lg font-bold text-white">
               {title}
             </h3>
           </div>
@@ -27,7 +27,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ title, onClose }) => {
           </button>
         </div>
 
-        <div className="p-6 overflow-y-auto space-y-4 text-left font-['Inter'] text-sm text-[#44474e] leading-relaxed">
+        <div className="p-6 overflow-y-auto space-y-4 text-left  text-sm text-[#44474e] leading-relaxed">
           {title === 'Privacy Policy' && (
             <>
               <p>

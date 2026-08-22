@@ -37,10 +37,10 @@ export const IndustriesModal: React.FC<IndustriesModalProps> = ({
         {/* Modal Header */}
         <div className="bg-[#002147] text-white px-6 py-5 flex items-center justify-between border-b border-white/10">
           <div>
-            <h3 className="font-['Manrope'] text-xl md:text-2xl font-bold text-white">
+            <h3 className=" text-xl md:text-2xl font-bold text-white">
               Industries & Key Sectors Served
             </h3>
-            <p className="font-['Inter'] text-xs text-[#708ab5] mt-0.5">
+            <p className=" text-xs text-[#708ab5] mt-0.5">
               Certified supply solutions for high-consequence infrastructure and manufacturing facilities
             </p>
           </div>
@@ -68,18 +68,18 @@ export const IndustriesModal: React.FC<IndustriesModalProps> = ({
                         {renderSectorIcon(sector.icon)}
                       </span>
                     </div>
-                    <h4 className="font-['Manrope'] text-lg font-bold text-[#002147]">
+                    <h4 className=" text-lg font-bold text-[#002147]">
                       {sector.title}
                     </h4>
                   </div>
 
-                  <p className="font-['Inter'] text-xs sm:text-sm text-[#44474e] leading-relaxed mb-4">
+                  <p className=" text-xs sm:text-sm text-[#44474e] leading-relaxed mb-4">
                     {sector.description}
                   </p>
 
                   {/* Key Supplies */}
                   <div className="mb-4">
-                    <span className="font-['Inter'] text-xs font-semibold text-[#191c1e] uppercase tracking-wider block mb-2">
+                    <span className=" text-xs font-semibold text-[#191c1e] uppercase tracking-wider block mb-2">
                       Key Material Supplies:
                     </span>
                     <div className="flex flex-wrap gap-1.5">
@@ -97,7 +97,7 @@ export const IndustriesModal: React.FC<IndustriesModalProps> = ({
                 </div>
 
                 {/* Featured Project */}
-                <div className="bg-[#f7f9fb] p-3 rounded border-l-3 border-[#fea619] text-xs font-['Inter'] text-[#44474e] mt-2">
+                <div className="bg-[#f7f9fb] p-3 rounded border-l-3 border-[#fea619] text-xs  text-[#44474e] mt-2">
                   <span className="font-bold text-[#002147] block mb-0.5">Project Footprint:</span>
                   {sector.featuredProject}
                 </div>
@@ -108,7 +108,7 @@ export const IndustriesModal: React.FC<IndustriesModalProps> = ({
 
         {/* Modal Footer */}
         <div className="bg-[#f2f4f6] px-6 py-4 border-t border-[#c4c6cf] flex items-center justify-between">
-          <p className="text-xs text-[#74777f] font-['Inter']">
+          <p className="text-xs text-[#74777f] ">
             Annual rate contracts and turnkey material supply schedules available.
           </p>
           <div className="flex items-center gap-3">
@@ -117,14 +117,14 @@ export const IndustriesModal: React.FC<IndustriesModalProps> = ({
                 onClose();
                 onRequestQuote();
               }}
-              className="bg-[#fea619] hover:bg-[#ffb95f] text-[#684000] text-xs font-['Inter'] font-bold uppercase tracking-wider px-5 py-2.5 rounded shadow-2xs cursor-pointer flex items-center gap-1.5"
+              className="bg-[#fea619] hover:bg-[#ffb95f] text-[#684000] text-xs  font-bold uppercase tracking-wider px-5 py-2.5 rounded shadow-2xs cursor-pointer flex items-center gap-1.5"
             >
               <span>Request Sector Quotation</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
             <button
               onClick={onClose}
-              className="bg-[#002147] text-white text-xs font-['Inter'] font-semibold px-4 py-2.5 rounded hover:bg-[#000a1e] cursor-pointer"
+              className="bg-[#002147] text-white text-xs  font-semibold px-4 py-2.5 rounded hover:bg-[#000a1e] cursor-pointer"
             >
               Close
             </button>

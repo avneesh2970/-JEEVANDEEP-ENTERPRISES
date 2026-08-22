@@ -83,10 +83,10 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
           <span className="inline-block text-xs font-bold text-[#002147] uppercase tracking-wider bg-[#002147]/10 px-3.5 py-1 rounded-full mb-3">
             Certified Materials Inventory
           </span>
-          <h2 className="font-['Manrope'] text-3xl sm:text-4xl md:text-[44px] md:leading-[52px] font-extrabold text-[#002147] mb-4 tracking-tight">
+          <h2 className=" text-3xl sm:text-4xl md:text-[44px] md:leading-[52px] font-extrabold text-[#002147] mb-4 tracking-tight">
             Featured Industrial Products
           </h2>
-          <p className="font-['Inter'] text-base md:text-[18px] text-[#44474e] max-w-2xl mx-auto">
+          <p className=" text-base md:text-[18px] text-[#44474e] max-w-2xl mx-auto">
             Browse our certified high-performance industrial supplies. Click any product to request an instant quotation.
           </p>
         </motion.div>
@@ -102,7 +102,7 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
                 value={searchQuery}
                 onChange={handleSearchChange}
                 placeholder="Search products (e.g. Rockwool, XLPE, Nut Bolt, Cable Tray)..."
-                className="w-full bg-[#f7f9fb] border border-[#c4c6cf] focus:border-[#002147] focus:bg-white rounded-lg pl-10 pr-4 py-2.5 font-['Inter'] text-xs sm:text-sm text-[#191c1e] outline-hidden transition-colors"
+                className="w-full bg-[#f7f9fb] border border-[#c4c6cf] focus:border-[#002147] focus:bg-white rounded-lg pl-10 pr-4 py-2.5  text-xs sm:text-sm text-[#191c1e] outline-hidden transition-colors"
               />
               {searchQuery && (
                 <button
@@ -116,7 +116,7 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
 
             {/* Filter Pills */}
             <div className="flex flex-wrap items-center gap-1.5 w-full md:w-auto">
-              <span className="text-xs font-semibold text-[#74777f] font-['Inter'] mr-1 hidden lg:inline">
+              <span className="text-xs font-semibold text-[#74777f]  mr-1 hidden lg:inline">
                 Category Filter:
               </span>
               {filterCategories.map((catKey) => {
@@ -125,7 +125,7 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
                   <button
                     key={catKey}
                     onClick={() => handleFilterChange(catKey)}
-                    className={`px-3.5 py-1.5 rounded-lg text-xs font-['Inter'] font-semibold capitalize transition-all cursor-pointer ${
+                    className={`px-3.5 py-1.5 rounded-lg text-xs  font-semibold capitalize transition-all cursor-pointer ${
                       isActive
                         ? 'bg-[#002147] text-white shadow-xs'
                         : 'bg-[#f2f4f6] hover:bg-[#e0e3e5] text-[#44474e]'
@@ -190,12 +190,12 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
                     </div>
 
                     {/* 3. Product Title */}
-                    <h3 className="font-['Manrope'] text-base sm:text-lg font-bold text-[#000a1e] mb-2 tracking-tight line-clamp-2 group-hover:text-[#002147] transition-colors leading-snug">
+                    <h3 className=" text-base sm:text-lg font-bold text-[#000a1e] mb-2 tracking-tight line-clamp-2 group-hover:text-[#002147] transition-colors leading-snug">
                       {prod.name}
                     </h3>
 
                     {/* 4. Short Description */}
-                    <p className="font-['Inter'] text-xs leading-relaxed text-[#44474e] line-clamp-3">
+                    <p className=" text-xs leading-relaxed text-[#44474e] line-clamp-3">
                       {prod.description}
                     </p>
                   </div>
@@ -212,7 +212,7 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
               >
                 <button
                   onClick={() => setShowAllProducts(!showAllProducts)}
-                  className="inline-flex items-center gap-2.5 bg-[#002147] hover:bg-[#000a1e] text-white font-['Inter'] text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer border border-white/10"
+                  className="inline-flex items-center gap-2.5 bg-[#002147] hover:bg-[#000a1e] text-white  text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer border border-white/10"
                 >
                   <span>{showAllProducts ? 'Show Less Products' : `View All Products (${filteredProducts.length})`}</span>
                   {showAllProducts ? (
@@ -234,15 +234,15 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
             <div className="w-16 h-16 rounded-full bg-[#f2f4f6] text-[#002147] flex items-center justify-center mx-auto mb-4">
               <Box className="w-8 h-8 text-[#fea619]" />
             </div>
-            <h3 className="font-['Manrope'] text-xl font-bold text-[#002147] mb-2">
+            <h3 className=" text-xl font-bold text-[#002147] mb-2">
               No matching products found
             </h3>
-            <p className="font-['Inter'] text-sm text-[#44474e] mb-6 leading-relaxed">
+            <p className=" text-sm text-[#44474e] mb-6 leading-relaxed">
               We couldn't find any products matching "<strong>{searchQuery}</strong>". Try searching for keywords like <em>Rockwool</em>, <em>Nitrile</em>, <em>Jali</em>, or <em>Nut Bolt</em>.
             </p>
             <button
               onClick={clearFilters}
-              className="inline-flex items-center gap-2 bg-[#002147] hover:bg-[#000a1e] text-white font-['Inter'] text-xs font-semibold px-5 py-2.5 rounded-lg transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-[#002147] hover:bg-[#000a1e] text-white  text-xs font-semibold px-5 py-2.5 rounded-lg transition-colors cursor-pointer"
             >
               <RotateCcw className="w-4 h-4 text-[#fea619]" />
               <span>Clear Search & Show All Products</span>
@@ -265,17 +265,17 @@ export const ProductCategoriesSection: React.FC<ProductCategoriesSectionProps> =
               </span>
             </div>
             <div>
-              <h4 className="font-['Manrope'] text-lg font-bold text-[#000a1e]">
+              <h4 className=" text-lg font-bold text-[#000a1e]">
                 Specialized Gaskets & High-Pressure Sealing Range
               </h4>
-              <p className="text-xs md:text-sm text-[#44474e] font-['Inter']">
+              <p className="text-xs md:text-sm text-[#44474e] ">
                 CNAF non-asbestos sheets, ASME B16.20 spiral wound gaskets, PTFE joint sealants for severe service pipelines.
               </p>
             </div>
           </div>
           <button
             onClick={() => onRequestQuoteForCategory('Sealing')}
-            className="shrink-0 bg-[#f2f4f6] hover:bg-[#002147] hover:text-white text-[#000a1e] px-5 py-3 rounded-lg font-['Inter'] text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-2 cursor-pointer"
+            className="shrink-0 bg-[#f2f4f6] hover:bg-[#002147] hover:text-white text-[#000a1e] px-5 py-3 rounded-lg  text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-2 cursor-pointer"
           >
             <span>Explore Sealing Range</span>
             <ArrowRight className="w-4 h-4" />

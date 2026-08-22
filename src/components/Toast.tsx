@@ -21,7 +21,7 @@ export const Toast: React.FC<ToastProps> = ({ message, onClose }) => {
           <div className="p-1 rounded-full bg-[#fea619]/20 text-[#fea619] shrink-0 mt-0.5">
             <CheckCircle2 className="w-4 h-4 text-[#fea619]" />
           </div>
-          <div className="text-xs font-['Inter'] font-medium leading-relaxed flex-grow text-slate-100">
+          <div className="text-xs  font-medium leading-relaxed flex-grow text-slate-100">
             {message}
           </div>
           <button

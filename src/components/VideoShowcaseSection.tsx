@@ -150,7 +150,7 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="font-['Manrope'] text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight"
+              className=" text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight"
             >
               Inside Jeevandeep Enterprises
             </motion.h2>
@@ -159,7 +159,7 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="font-['Inter'] text-slate-300 text-base md:text-lg max-w-2xl mt-2"
+              className=" text-slate-300 text-base md:text-lg max-w-2xl mt-2"
             >
               Take a virtual tour of our Mumbai fulfillment warehouse, thermal insulation testing laboratory, and quality assurance workflows.
             </motion.p>
@@ -170,7 +170,7 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
             whileHover={{ scale: 1.04, translateY: -2 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => onOpenVideoModal(activeChapterIndex)}
-            className="inline-flex items-center gap-2.5 bg-[#fea619] hover:bg-[#e69310] text-[#002147] font-['Inter'] font-bold text-sm px-6 py-3.5 rounded shadow-lg transition-all cursor-pointer self-start md:self-auto shrink-0"
+            className="inline-flex items-center gap-2.5 bg-[#fea619] hover:bg-[#e69310] text-[#002147]  font-bold text-sm px-6 py-3.5 rounded shadow-lg transition-all cursor-pointer self-start md:self-auto shrink-0"
           >
             <span className="material-symbols-outlined text-[22px]">fullscreen</span>
             <span>Watch Fullscreen HD Video</span>
@@ -298,7 +298,7 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
             {/* Video Meta Info Footer */}
             <div className="p-6 bg-[#001c3d] border-t border-white/10">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-3">
-                <h3 className="font-['Manrope'] text-xl font-bold text-white">
+                <h3 className=" text-xl font-bold text-white">
                   {activeChapter.title}
                 </h3>
                 <span className="text-xs font-semibold text-[#fea619] bg-[#fea619]/10 px-3 py-1 rounded border border-[#fea619]/20">
@@ -306,7 +306,7 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
                 </span>
               </div>
 
-              <p className="font-['Inter'] text-sm text-slate-300 leading-relaxed mb-4">
+              <p className=" text-sm text-slate-300 leading-relaxed mb-4">
                 {activeChapter.description}
               </p>
 
@@ -327,7 +327,7 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
 
           {/* Chapter Selector Sidebar */}
           <div className="lg:col-span-4 flex flex-col gap-4">
-            <h3 className="font-['Manrope'] text-lg font-bold text-white flex items-center justify-between">
+            <h3 className=" text-lg font-bold text-white flex items-center justify-between">
               <span>Video Playlists & Chapters</span>
               <span className="text-xs text-slate-400 font-normal">4 Clips</span>
             </h3>
@@ -373,7 +373,7 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
                           {chap.category}
                         </span>
                       </div>
-                      <h4 className={`font-['Manrope'] text-sm font-semibold truncate ${isActive ? 'text-white font-bold' : 'text-slate-200'}`}>
+                      <h4 className={` text-sm font-semibold truncate ${isActive ? 'text-white font-bold' : 'text-slate-200'}`}>
                         {chap.title}
                       </h4>
                       <p className="text-xs text-slate-400 line-clamp-1 mt-0.5">
@@ -392,10 +392,10 @@ export const VideoShowcaseSection: React.FC<VideoShowcaseSectionProps> = ({
                   verified
                 </span>
                 <div>
-                  <h4 className="font-['Manrope'] text-sm font-bold text-white mb-1">
+                  <h4 className=" text-sm font-bold text-white mb-1">
                     ISO 9001 Certified Quality Footage
                   </h4>
-                  <p className="font-['Inter'] text-xs text-slate-300 leading-relaxed">
+                  <p className=" text-xs text-slate-300 leading-relaxed">
                     All operations shown reflect Jeevandeep Enterprises' standard quality management protocols and certified material handling.
                   </p>
                 </div>

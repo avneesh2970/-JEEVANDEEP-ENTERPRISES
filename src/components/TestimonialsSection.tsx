@@ -63,10 +63,10 @@ export const TestimonialsSection: React.FC = () => {
           <span className="inline-block text-xs font-bold text-[#002147] uppercase tracking-wider bg-[#002147]/10 px-3.5 py-1 rounded-full mb-3">
             Infinite Client Reviews Loop
           </span>
-          <h2 className="font-['Manrope'] text-3xl sm:text-4xl md:text-[44px] md:leading-[52px] font-extrabold text-[#002147] mb-4 tracking-tight">
+          <h2 className=" text-3xl sm:text-4xl md:text-[44px] md:leading-[52px] font-extrabold text-[#002147] mb-4 tracking-tight">
             What Our Partners Say
           </h2>
-          <p className="font-['Inter'] text-base md:text-[18px] text-[#44474e] max-w-2xl mx-auto mb-6">
+          <p className=" text-base md:text-[18px] text-[#44474e] max-w-2xl mx-auto mb-6">
             Trusted by leading MEP contractors, power grid utilities, oil refineries, and manufacturing plants across India.
           </p>
 
@@ -75,7 +75,7 @@ export const TestimonialsSection: React.FC = () => {
             <div className="bg-[#f2f4f6] p-1 rounded-xl border border-[#c4c6cf]/60 inline-flex items-center gap-1">
               <button
                 onClick={() => setViewMode('infinite')}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-['Inter'] font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                className={`px-3.5 py-1.5 rounded-lg text-xs  font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
                   viewMode === 'infinite'
                     ? 'bg-[#002147] text-white shadow-2xs'
                     : 'text-[#44474e] hover:text-[#000a1e]'
@@ -86,7 +86,7 @@ export const TestimonialsSection: React.FC = () => {
               </button>
               <button
                 onClick={() => setViewMode('spotlight')}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-['Inter'] font-bold transition-all cursor-pointer ${
+                className={`px-3.5 py-1.5 rounded-lg text-xs  font-bold transition-all cursor-pointer ${
                   viewMode === 'spotlight'
                     ? 'bg-[#002147] text-white shadow-2xs'
                     : 'text-[#44474e] hover:text-[#000a1e]'
@@ -104,7 +104,7 @@ export const TestimonialsSection: React.FC = () => {
                     <button
                       key={ind}
                       onClick={() => handleFilterChange(ind)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-['Inter'] font-semibold capitalize transition-all cursor-pointer ${
+                      className={`px-3 py-1.5 rounded-lg text-xs  font-semibold capitalize transition-all cursor-pointer ${
                         isActive
                           ? 'bg-[#002147] text-white shadow-2xs'
                           : 'bg-[#f2f4f6] text-[#44474e] hover:bg-[#e0e3e5]'
@@ -163,7 +163,7 @@ export const TestimonialsSection: React.FC = () => {
                     </div>
 
                     {/* Quote */}
-                    <p className="font-['Inter'] text-xs sm:text-sm leading-relaxed text-[#44474e] mb-4 italic line-clamp-4">
+                    <p className=" text-xs sm:text-sm leading-relaxed text-[#44474e] mb-4 italic line-clamp-4">
                       "{t.quote}"
                     </p>
                   </div>
@@ -175,10 +175,10 @@ export const TestimonialsSection: React.FC = () => {
                         {t.name[0]}
                       </div>
                       <div>
-                        <h4 className="font-['Manrope'] text-xs font-bold text-[#002147]">
+                        <h4 className=" text-xs font-bold text-[#002147]">
                           {t.name}
                         </h4>
-                        <p className="font-['Inter'] text-[10px] text-[#74777f] line-clamp-1">
+                        <p className=" text-[10px] text-[#74777f] line-clamp-1">
                           {t.role}, {t.company}
                         </p>
                       </div>
@@ -189,11 +189,11 @@ export const TestimonialsSection: React.FC = () => {
             </motion.div>
           </div>
 
-          <div className="text-center mt-6">
-            <span className="text-[11px] text-[#74777f] font-['Inter'] font-medium bg-[#f2f4f6] px-3 py-1 rounded-full border border-[#e0e3e5]">
+          {/* <div className="text-center mt-6">
+            <span className="text-[11px] text-[#74777f]  font-medium bg-[#f2f4f6] px-3 py-1 rounded-full border border-[#e0e3e5]">
               💡 Hover over any card to pause infinite scroll
             </span>
-          </div>
+          </div> */}
         </div>
       ) : (
         /* SPOTLIGHT MODE */
@@ -236,7 +236,7 @@ export const TestimonialsSection: React.FC = () => {
                       </div>
                     </div>
 
-                    <p className="font-['Inter'] text-lg sm:text-xl md:text-2xl leading-relaxed text-[#000a1e] font-medium mb-8 italic">
+                    <p className=" text-lg sm:text-xl md:text-2xl leading-relaxed text-[#000a1e] font-medium mb-8 italic">
                       "{currentTestimonial.quote}"
                     </p>
                   </div>
@@ -247,10 +247,10 @@ export const TestimonialsSection: React.FC = () => {
                         {currentTestimonial.name[0]}
                       </div>
                       <div>
-                        <h3 className="font-['Manrope'] text-lg font-bold text-[#002147]">
+                        <h3 className=" text-lg font-bold text-[#002147]">
                           {currentTestimonial.name}
                         </h3>
-                        <p className="font-['Inter'] text-xs text-[#74777f]">
+                        <p className=" text-xs text-[#74777f]">
                           {currentTestimonial.role} • <strong className="text-[#000a1e]">{currentTestimonial.company}</strong>
                         </p>
                       </div>

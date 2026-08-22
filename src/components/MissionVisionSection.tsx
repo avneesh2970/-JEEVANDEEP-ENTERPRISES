@@ -22,11 +22,11 @@ export const MissionVisionSection: React.FC = () => {
               </span>
             </div>
 
-            <h3 className="font-['Manrope'] text-2xl md:text-[28px] font-bold text-[#002147] mb-4">
+            <h3 className=" text-2xl md:text-[28px] font-bold text-[#002147] mb-4">
               Our Mission
             </h3>
 
-            <p className="font-['Inter'] text-base md:text-[17px] md:leading-[28px] text-[#44474e] flex-grow">
+            <p className=" text-base md:text-[17px] md:leading-[28px] text-[#44474e] flex-grow">
               To provide high-quality, certified industrial solutions that empower infrastructure, manufacturing, and technical projects across India. We strive to be the invisible strength behind our clients' success.
             </p>
           </motion.div>
@@ -46,11 +46,11 @@ export const MissionVisionSection: React.FC = () => {
               </span>
             </div>
 
-            <h3 className="font-['Manrope'] text-2xl md:text-[28px] font-bold text-[#002147] mb-4">
+            <h3 className=" text-2xl md:text-[28px] font-bold text-[#002147] mb-4">
               Our Vision
             </h3>
 
-            <p className="font-['Inter'] text-base md:text-[17px] md:leading-[28px] text-[#44474e] flex-grow">
+            <p className=" text-base md:text-[17px] md:leading-[28px] text-[#44474e] flex-grow">
               To be the undisputed leader and most trusted name in industrial supply nationwide, recognized globally for our unwavering commitment to precision, quality, and exceptional service architecture.
             </p>
           </motion.div>
