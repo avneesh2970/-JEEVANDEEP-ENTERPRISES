@@ -17,7 +17,7 @@ import { ApplicationsPage } from './components/ApplicationsPage';
 import { ContactPage } from './components/ContactPage';
 import { Toast } from './components/Toast';
 import { WhatsAppButton } from './components/WhatsAppButton';
-import { PRODUCT_CATEGORIES } from './data/mockData';
+import { PRODUCTS } from './data/mockData';
 
 type ViewMode = 'home' | 'about' | 'products' | 'industries' | 'applications' | 'contact';
 
@@ -136,14 +136,14 @@ export default function App() {
       window.location.href = 'tel:+919411487540';
       showToast('Connecting to Sales Hotline: +91 94114 87540');
     } else {
-      window.location.href = 'mailto:sales@jeevandeep.com';
-      showToast('Opening email client for sales@jeevandeep.com');
+      window.location.href = 'mailto:jeevendeep.enterprises@gmail.com';
+      showToast('Opening email client for jeevendeep.enterprises@gmail.com');
     }
   };
 
-  const handleCategoryByName = (name: string) => {
-    const match = PRODUCT_CATEGORIES.find(
-      (c) => c.name.toLowerCase() === name.toLowerCase() || c.id.toLowerCase() === name.toLowerCase()
+  const handleProductByName = (name: string) => {
+    const match = PRODUCTS.find(
+      (p) => p.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(p.name.toLowerCase())
     );
     if (match) {
       handleRequestQuote(match.name);
@@ -175,7 +175,7 @@ export default function App() {
           /* Dedicated Products Page Route (/products) */
           <ProductsPage
             onNavigateHome={() => navigateToView('home', '/')}
-            onRequestQuote={(catName) => handleRequestQuote(catName)}
+            onRequestQuote={(prodName) => handleRequestQuote(prodName)}
           />
         ) : currentView === 'industries' ? (
           /* Dedicated Industries Page Route (/industries) */
@@ -218,10 +218,9 @@ export default function App() {
             {/* Core Values Section */}
             <CoreValuesSection />
 
-            {/* Our Product Categories Section */}
+            {/* Featured Industrial Products Section */}
             <ProductCategoriesSection
-              onSelectCategory={(cat) => handleRequestQuote(cat.name)}
-              onRequestQuoteForCategory={(catName) => handleRequestQuote(catName)}
+              onRequestQuoteForCategory={(prodName) => handleRequestQuote(prodName)}
             />
 
             {/* What Our Partners Say Section */}
@@ -241,7 +240,7 @@ export default function App() {
 
       {/* Footer */}
       <Footer
-        onSelectCategoryName={handleCategoryByName}
+        onSelectProductName={handleProductByName}
         onOpenLegalModal={(title) => setLegalModalTitle(title)}
       />
 

@@ -71,7 +71,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   }, []);
 
   // Split title into individual word spans
-  const titleWords = 'Your Trusted Partner for Industrial Excellence'.split(' ');
+  const titleWords = 'Complete Insulation Solutions Under One Roof'.split(' ');
 
   return (
     <section className="relative w-full min-h-[600px] md:min-h-[680px] flex items-center justify-center bg-[#00132b] text-white border-b border-[#c4c6cf] overflow-hidden text-center">
@@ -89,7 +89,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#00132b]/70 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-[#00132b]/75 backdrop-blur-[2px]" />
 
       {/* Floating ambient particles */}
       <div ref={particlesRef} className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
@@ -112,17 +112,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 max-w-[1100px] mx-auto py-20 md:py-28 flex flex-col items-center justify-center gap-6">
         <div className="max-w-4xl space-y-6 text-center">
 
+          {/* EST 2011 • INSULATION SPECIALISTS BADGE */}
+          <motion.div
+            initial={{ opacity: 0, y: -15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#fea619]/15 border border-[#fea619]/40 text-[#fea619] text-xs font-extrabold uppercase tracking-wider"
+          >
+            <span>EST. 2011 • INSULATION SPECIALISTS</span>
+          </motion.div>
+
           {/* Title — word-by-word reveal */}
           <h1
             ref={titleRef}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] lg:leading-[64px] font-extrabold text-white tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] lg:leading-[62px] font-extrabold text-white tracking-tight"
             style={{ opacity: 1 }}
           >
             {titleWords.map((word, i) => (
               <span
                 key={i}
-                className="hero-word inline-block mr-[0.25em] opacity-0"
-                style={{ willChange: 'transform, opacity' }}
+                className="hero-word inline-block mr-[0.25em]"
+                style={{ opacity: 0, willChange: 'transform, opacity' }}
               >
                 {word}
               </span>
@@ -132,18 +142,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Subtitle */}
           <p
             ref={subtitleRef}
-            className="text-base sm:text-lg md:text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-normal opacity-0"
-            style={{ willChange: 'transform, opacity' }}
+            className="text-base sm:text-lg md:text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-normal"
+            style={{ opacity: 0, willChange: 'transform, opacity' }}
           >
-            Precision engineering and robust industrial supplies powering India's infrastructure.
+            Providing high-quality insulation products and reliable solutions under one roof — saving you time, cost, and effort.
           </p>
+
+          {/* Motto quote */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.85, duration: 0.6 }}
+            className="text-xs sm:text-sm font-semibold italic text-[#fea619] tracking-wide"
+          >
+            "Quality is our promise, trust is our identity."
+          </motion.div>
 
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.9 }}
-            className="flex flex-wrap items-center justify-center gap-4 pt-4"
+            className="flex flex-wrap items-center justify-center gap-4 pt-2"
           >
             <motion.button
               whileHover={{ scale: 1.04, translateY: -2 }}
@@ -172,11 +192,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 pt-8 mt-6 border-t border-white/15 w-full max-w-3xl"
         >
           {[
-            { icon: <FaCircleCheck />, label: 'Quality Products' },
-            { icon: <FaTruckFast />,   label: 'Reliable Supply' },
-            { icon: <FaBuilding />,    label: 'B2B Solutions' },
+            { icon: <FaCircleCheck />, label: 'All-in-One Insulation' },
+            { icon: <FaTruckFast />,   label: 'Punctual Delivery' },
+            { icon: <FaBuilding />,    label: 'Serving Since 2011' },
           ].map(({ icon, label }) => (
-            <div key={label} className="hero-badge flex items-center gap-2.5 opacity-0" style={{ willChange: 'transform, opacity' }}>
+            <div key={label} className="hero-badge flex items-center gap-2.5" style={{ opacity: 0, willChange: 'transform, opacity' }}>
               <span className="text-[#fea619] text-xl">{icon}</span>
               <span className="text-xs sm:text-[13px] font-semibold text-slate-200 tracking-wide">{label}</span>
             </div>

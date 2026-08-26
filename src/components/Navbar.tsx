@@ -76,8 +76,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             </motion.div>
             <div className="flex flex-col">
               <span className="leading-none text-[#002147] font-black">JEEVANDEEP ENTERPRISES</span>
-              <span className="text-[10px]  font-semibold text-[#74777f] tracking-widest uppercase mt-0.5 hidden sm:block">
-                Industrial Supplies & Engineering
+              <span className="text-[10px] font-semibold text-[#74777f] tracking-wide uppercase mt-0.5 hidden sm:block">
+                Complete Insulation Solutions Under One Roof
               </span>
             </div>
           </button>
@@ -133,9 +133,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Quick Email Button */}
           <button
-            onClick={() => handleCopyQuick('sales@jeevandeep.com', 'mail')}
+            onClick={() => handleCopyQuick('jeevendeep.enterprises@gmail.com', 'mail')}
             className="text-[#44474e] hover:text-[#002147] transition-all p-2 rounded-full hover:bg-[#eceef0] relative group cursor-pointer"
-            title="Email Sales: sales@jeevandeep.com"
+            title="Email: jeevendeep.enterprises@gmail.com"
             aria-label="Email Directory"
           >
             {copiedType === 'mail' ? (
@@ -146,7 +146,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
             )}
             <span className="absolute -bottom-9 left-1/2 -translate-x-1/2 bg-[#002147] text-white text-[10px] py-1 px-2.5 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50 font-mono">
-              sales@jeevandeep.com
+              jeevendeep.enterprises@gmail.com
             </span>
           </button>
 

@@ -25,18 +25,57 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onShowToast }) =
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.fullName || !formData.email || !formData.phone) {
       onShowToast('Please fill in all required fields.');
       return;
     }
     setIsSubmitting(true);
-    setTimeout(() => {
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/jeevendeep.enterprises@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          Name: formData.fullName,
+          Email: formData.email,
+          Phone: formData.phone,
+          Subject: formData.subject || 'Material / Quotation Enquiry',
+          Message: formData.message,
+          _subject: `New Lead Enquiry from ${formData.fullName} - Jeevandeep Enterprises`,
+          _template: 'table'
+        })
+      });
+
+      if (response.ok) {
+        onShowToast('Your enquiry has been sent to jeevendeep.enterprises@gmail.com! We will reply within 2 hours.');
+        setFormData({ fullName: '', email: '', phone: '', subject: '', message: '' });
+      } else {
+        // Fallback to mailto
+        const mailtoUrl = `mailto:jeevendeep.enterprises@gmail.com?subject=${encodeURIComponent(
+          formData.subject || 'Material Enquiry - Jeevandeep Enterprises'
+        )}&body=${encodeURIComponent(
+          `Name: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
+        )}`;
+        window.location.href = mailtoUrl;
+        onShowToast('Opening email client for jeevendeep.enterprises@gmail.com...');
+      }
+    } catch (err) {
+      // In case of network / CORS error, fallback to mailto
+      const mailtoUrl = `mailto:jeevendeep.enterprises@gmail.com?subject=${encodeURIComponent(
+        formData.subject || 'Material Enquiry - Jeevandeep Enterprises'
+      )}&body=${encodeURIComponent(
+        `Name: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
+      )}`;
+      window.location.href = mailtoUrl;
+      onShowToast('Message prepared for jeevendeep.enterprises@gmail.com.');
+    } finally {
       setIsSubmitting(false);
-      setFormData({ fullName: '', email: '', phone: '', subject: '', message: '' });
-      onShowToast('Message sent! We will get back to you shortly.');
-    }, 800);
+    }
   };
 
   const inputClass =
@@ -123,10 +162,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onShowToast }) =
               <div>
                 <h4 className=" text-sm font-bold text-[#000a1e] mb-0.5">Email</h4>
                 <a
-                  href="mailto:info@jeevandeep.com"
+                  href="mailto:jeevendeep.enterprises@gmail.com"
                   className=" text-sm text-[#002147] font-semibold hover:underline"
                 >
-                  info@jeevandeep.com
+                  jeevendeep.enterprises@gmail.com
                 </a>
               </div>
             </div>

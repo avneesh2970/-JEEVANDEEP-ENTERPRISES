@@ -18,17 +18,17 @@ export const AboutModal: React.FC<AboutModalProps> = ({
   if (!isOpen) return null;
 
   const MILESTONES = [
-    { year: '2001', title: 'Company Founded', desc: 'Established in Mumbai as a specialized mechanical hardware & fastener distributor for local manufacturing plants.' },
-    { year: '2008', title: 'Insulation Line Launch', desc: 'Expanded into industrial thermal insulation, partnering with certified manufacturers for Rockwool slabs and Ceramic Fiber blankets.' },
-    { year: '2014', title: 'High-Voltage Rubber Matting', desc: 'Introduced IS 15652 & IEC 61111 compliant dielectric rubber matting for high-voltage substations up to 33kV.' },
-    { year: '2019', title: 'Central Fulfillment Hub', desc: 'Constructed a state-of-the-art 50,000 Sq. Ft. central logistics & warehousing hub in Mumbai with 5,000+ SKUs.' },
-    { year: '2023', title: 'ISO 9001:2015 Certification', desc: 'Achieved ISO 9001 certification for quality management, material traceability, and automated Mill Test Certificate (MTC 3.1) issuance.' },
+    { year: '2011', title: 'Company Founded', desc: 'Established with the dedicated goal of providing customers with high-quality insulation products and reliable solutions under one roof.' },
+    { year: '2014', title: 'Thermal & Cold Insulation Range Expansion', desc: 'Scaled full-spectrum inventory of Class 0 Nitrile Rubber pipe tubes, XLPE foam, and Rockwool thermal slabs.' },
+    { year: '2017', title: 'High-Temperature & Acoustic Line Launch', desc: 'Introduced 1425°C refractory Ceramic Fiber blankets and Accosound viscoelastic acoustic damping systems for heavy industry.' },
+    { year: '2020', title: 'Nationwide Branch Network Expansion', desc: 'Established regional hubs across Mohali, Chandigarh, Dehradun, Ghaziabad, and Hyderabad to serve projects with same-day dispatch.' },
+    { year: '2023', title: 'ISO 9001:2015 Certification & Quality Standards', desc: 'Formalized ISO 9001 certified quality management with Mill Test Certificates (MTC 3.1) and complete material traceability.' },
   ];
 
   const LEADERS = [
-    { name: 'Rajesh V. Sharma', role: 'Founder & Managing Director', experience: '25+ Years Experience', bio: 'Pioneered Jeevandeep Enterprises from a regional hardware vendor into a national industrial supply house serving power plants and refineries.' },
-    { name: 'Vikram Mehta', role: 'Chief Quality Officer & Tech Lead', experience: '18+ Years Experience', bio: 'Oversees technical data validation, dielectric testing, and compliance with ASTM C612, IS 8183, and ASME B16.20 standards.' },
-    { name: 'Ananya Deshmukh', role: 'Head of B2B Supply Chain', experience: '14+ Years Experience', bio: 'Manages pan-India logistics, emergency shutdown fulfillment, and same-day dispatch operations for major infrastructure clients.' },
+    { name: 'Rajesh V. Sharma', role: 'Founder & Managing Director', experience: '15+ Years Experience', bio: 'Founded Jeevandeep Enterprises in 2011, establishing it as one of India’s foremost pure-play insulation supply partners.' },
+    { name: 'Vikram Mehta', role: 'Chief Technical & Quality Lead', experience: '12+ Years Experience', bio: 'Oversees technical data validation, thermal conductivity testing, and compliance with ASTM C612, IS 8183, and BS 476 standards.' },
+    { name: 'Ananya Deshmukh', role: 'Head of Nationwide Supply Chain', experience: '10+ Years Experience', bio: 'Manages pan-India dispatch and on-site delivery coordination across our regional branch network.' },
   ];
 
   return (
@@ -58,11 +58,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                 <Building className="w-5 h-5" />
               </div>
               <div>
-                <h3 className=" text-xl md:text-2xl font-bold text-white leading-tight">
+                <h3 className="text-xl md:text-2xl font-bold text-white leading-tight">
                   About Jeevandeep Enterprises
                 </h3>
-                <p className=" text-xs text-slate-300">
-                  Two Decades of Industrial Reliability, Precision Engineering & Certified Material Supply
+                <p className="text-xs text-slate-300">
+                  EST. 2011 • Complete Insulation Solutions Under One Roof
                 </p>
               </div>
             </div>
@@ -79,15 +79,15 @@ export const AboutModal: React.FC<AboutModalProps> = ({
           {/* Navigation Tabs Bar */}
           <div className="bg-[#f2f4f6] px-6 py-3 border-b border-[#e0e3e5] flex flex-wrap items-center gap-2 shrink-0">
             {[
-              { id: 'story', label: 'Company Overview' },
+              { id: 'story', label: 'Who We Are' },
               { id: 'timeline', label: 'Milestone Timeline' },
               { id: 'leadership', label: 'Executive Leadership' },
-              { id: 'quality', label: 'Quality & Testing Lab' },
+              { id: 'quality', label: 'Quality & Standards' },
             ].map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id as any)}
-                className={`px-4 py-2 rounded-lg text-xs  font-semibold transition-all cursor-pointer ${
+                className={`px-4 py-2 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                   activeTab === tab.id
                     ? 'bg-[#002147] text-white shadow-xs'
                     : 'bg-white text-[#44474e] hover:bg-[#e0e3e5] border border-[#c4c6cf]/60'
@@ -111,27 +111,30 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                   <div className="md:col-span-7 space-y-4">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#fea619]/20 text-[#855300] text-xs font-bold uppercase tracking-wider">
                       <ShieldCheck className="w-4 h-4 text-[#855300]" />
-                      ISO 9001:2015 Certified Operations
+                      EST. 2011 • INSULATION SPECIALISTS
                     </span>
-                    <h4 className=" text-2xl font-bold text-[#002147]">
-                      Building Confidence in Critical Infrastructure Since 2001
+                    <h4 className="text-2xl font-bold text-[#002147]">
+                      Complete Insulation Solutions Under One Roof
                     </h4>
-                    <p className=" text-sm text-[#44474e] leading-relaxed">
-                      Jeevandeep Enterprises was established with a singular mission: to bridge the gap between technical engineering specifications and reliable material delivery in India’s fast-paced industrial market.
+                    <p className="text-sm text-[#44474e] leading-relaxed">
+                      <strong>Jeevandeep Enterprises</strong> was founded in 2011 with the goal of providing customers with high-quality insulation products and reliable solutions under one roof.
                     </p>
-                    <p className=" text-sm text-[#44474e] leading-relaxed">
-                      Today, we operate a 50,000 Sq. Ft. central fulfillment hub in Mumbai stocking over 5,000 certified SKUs across high-temperature thermal insulation, dielectric rubber safety matting, electrical cable support systems, and high-tensile Grade B7/2H fasteners.
+                    <p className="text-sm text-[#44474e] leading-relaxed">
+                      For over a decade, we have made quality, integrity, and customer satisfaction our greatest strengths. Building on these values, our company has consistently scaled new heights and, by expanding its branches from time to time, has established a strong presence across the country.
+                    </p>
+                    <p className="text-sm text-[#002147] font-semibold italic border-l-3 border-[#fea619] pl-3 py-0.5">
+                      "Today, we offer our customers a comprehensive range of insulation products and solutions under one roof — saving them time, cost, and effort."
                     </p>
                   </div>
 
                   <div className="md:col-span-5 relative rounded-xl overflow-hidden shadow-lg border border-[#c4c6cf]">
                     <img
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDix9ySWulfU9L9OLZtyIkDqHGA_E5G86DjwkuzZWDMErKCDNmwrTW-ZCskA9RrjqzR3gRBqgV0bOBe567L54TpfKdH2dg1-0iqvA8QNxjBg_KzNInG29yMsyni7sgB-EagnUdI80OWlR9J0ggOxsQVb0ND6CgaRBeTIpOgnP0-l2ylkQDIG5v6cpG3A7euR9fn1rGv7TGQorGxVDwZsSGasb_b03n4w4ScDVx5-FQ0gCqC1M26vHX3"
-                      alt="Jeevandeep Warehouse Logistics Center"
+                      src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+                      alt="Jeevandeep Insulation Facility"
                       className="w-full h-56 object-cover"
                     />
                     <div className="absolute bottom-2 left-2 bg-[#002147]/90 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded backdrop-blur-xs">
-                      Central Hub • Mumbai
+                      Head Office • Mohali (Punjab)
                     </div>
                   </div>
                 </div>
@@ -142,11 +145,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                     <div className="w-10 h-10 rounded-lg bg-[#002147]/10 text-[#002147] flex items-center justify-center font-bold">
                       <Award className="w-5 h-5 text-[#fea619]" />
                     </div>
-                    <h5 className=" text-lg font-bold text-[#000a1e]">
-                      Certified Standards
+                    <h5 className="text-lg font-bold text-[#000a1e]">
+                      Certified Quality
                     </h5>
-                    <p className=" text-xs text-[#44474e] leading-relaxed">
-                      Every batch undergoes strict quality control conforming to ASTM C612, IS 8183, IS 15652, and ASME B16.20 specifications.
+                    <p className="text-xs text-[#44474e] leading-relaxed">
+                      Every insulation batch conforms to ASTM C612, IS 8183, BS 476, and ASTM C534 thermal standards.
                     </p>
                   </div>
 
@@ -154,11 +157,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                     <div className="w-10 h-10 rounded-lg bg-[#002147]/10 text-[#002147] flex items-center justify-center font-bold">
                       <Truck className="w-5 h-5 text-[#fea619]" />
                     </div>
-                    <h5 className=" text-lg font-bold text-[#000a1e]">
-                      Express B2B Logistics
+                    <h5 className="text-lg font-bold text-[#000a1e]">
+                      On-Time Delivery
                     </h5>
-                    <p className=" text-xs text-[#44474e] leading-relaxed">
-                      Integrated logistics network ensuring 24-48h dispatch for standard items and same-day priority handling for emergency plant shutdowns.
+                    <p className="text-xs text-[#44474e] leading-relaxed">
+                      Punctual project delivery from multiple regional branches in Mohali, Chandigarh, Dehradun, Ghaziabad, and Hyderabad.
                     </p>
                   </div>
 
@@ -166,11 +169,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({
                     <div className="w-10 h-10 rounded-lg bg-[#002147]/10 text-[#002147] flex items-center justify-center font-bold">
                       <FileText className="w-5 h-5 text-[#fea619]" />
                     </div>
-                    <h5 className=" text-lg font-bold text-[#000a1e]">
+                    <h5 className="text-lg font-bold text-[#000a1e]">
                       Mill Test Certificates
                     </h5>
-                    <p className=" text-xs text-[#44474e] leading-relaxed">
-                      Complete material traceability with MTC 3.1 test reports, chemical analysis dossiers, and third-party inspection readiness.
+                    <p className="text-xs text-[#44474e] leading-relaxed">
+                      Full material traceability with MTC 3.1 test reports, thermal conductivity dossiers, and fire safety ratings.
                     </p>
                   </div>
                 </div>
