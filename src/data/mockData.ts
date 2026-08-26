@@ -74,7 +74,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Cable Tray Covers', 'Acoustic Duct Backing', 'Machinery Guards', 'Architectural Ventilation'],
-    imageUrl: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/ExtraLarge/6mm-ss-perforated-metal-sheets-20250308173130277.jpg'
   },
   {
     id: 'prod-02',
@@ -92,7 +92,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Glasswool & Rockwool Facing', 'Acoustic Panel Wrapping', 'HVAC Duct Backing', 'Bituminous Roofing'],
-    imageUrl: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://ecdn6.globalso.com/upload/p/546/image_product/2023-12/658b8bb8b779930718.jpg'
   },
   {
     id: 'prod-03',
@@ -110,7 +110,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Chilled Water Piping', 'HVAC Air Handling Units', 'Oil Flange Gasket Fabrication', 'Refrigeration Lines'],
-    imageUrl: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZJbLBmQmIcHi4Fnz1gSugXpBCcoz9UE3a7vE5izxNWw2FiPpQsaxO-Hm&s=10'
   },
   {
     id: 'prod-04',
@@ -128,7 +128,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Underdeck Roof Insulation', 'HVAC Air Handling Units', 'Chilled Water Ducting', 'Cleanroom Acoustic Panels'],
-    imageUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://5.imimg.com/data5/OT/TY/OK/SELLER-77812349/xlpe-insulation-sheet-500x500.jpg'
   },
   {
     id: 'prod-05',
@@ -146,7 +146,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Industrial Shed Roofs', 'Pre-Engineered Buildings (PEB)', 'HVAC Duct Insulation', 'Cold Storage Walls'],
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVmHLS2M5lZvlWcK48Rf345e-QoPRmA0cD4lBRQmF1VeM9RgZ-ADFpPzoT&s=10'
   },
   {
     id: 'prod-06',
@@ -164,7 +164,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['HVAC Duct Hanging', 'Pipe Rack Supports', 'Cable Tray Hangers', 'Solar Inverter Framing'],
-    imageUrl: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-ZFqX-qZvOgCu55lyKWLoCyPq_781F2uRDICERaF-tVIV8z68ongUigv&s=10'
   },
   {
     id: 'prod-07',
@@ -182,7 +182,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Power Generation Plants', 'Refineries & Petrochem', 'Substation Cable Routing', 'Commercial Towers'],
-    imageUrl: 'https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/ExtraLarge/ladder-gi-perforated-cable-tra-20240404112130754.jpg'
   },
   {
     id: 'prod-08',
@@ -200,7 +200,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Structural Steel Assembly', 'Flange Bolting', 'Heavy Machinery Construction', 'Pipeline Joints'],
-    imageUrl: 'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://www.surajmetal.com/img/astm-f568-high-tensile-leg-bolts.jpg'
   },
   {
     id: 'prod-09',
@@ -218,7 +218,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['HVAC Duct Flange Sealing', 'Chilled Water Pipe Jointing', 'Pipe Vibration Isolation', 'Panel Enclosure Gasket'],
-    imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpwzA7bbBhJqzY10VWOsYcqbRCkgVlESvKO8EBIOZqxhZ5SMITqGmxZ0cK&s=10'
   },
   {
     id: 'prod-10',
@@ -236,7 +236,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Pharma Processing Lines', 'Oven Flange Gaskets', 'Food Grade Seals', 'High Temp Electrical Sleeve'],
-    imageUrl: 'https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN0m9Hlclj0aL5oOVwvzKLq51eUsFZfPUnGDFbNNJMvfiwcVNkJibhRCOP&s=10'
   },
   {
     id: 'prod-11',
@@ -254,7 +254,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Nitrile Foam Duct Bonding', 'XLPE Sheet Installation', 'Underdeck Acoustic Boarding', 'Automotive Insulation'],
-    imageUrl: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6CKNZrizENYvkomc6n6MnF2-B7o719i7axsbQN3E-3qPTyGmaE6Z2uVuS&s=10'
   },
   {
     id: 'prod-12',
@@ -272,7 +272,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Steam Pipe Lagging', 'Removable Insulation Blankets', 'Expansion Joint Bellows', 'Fireproof Welding Curtains'],
-    imageUrl: 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScG7qVtwBjCg2UU1-HYAV97zi7LqlRdrJnbK6fezmep6WU17bbJ8g_Qk0&s=10'
   },
   {
     id: 'prod-13',
@@ -290,7 +290,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['HVAC Acoustic Liner Sealing', 'Ductwork Canvas Jointing', 'Air Handling Unit Insulation', 'Fire Dampers'],
-    imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTVWUC7d8P3exkWTNMk5bP6B0A7P0D_nSxFZYo1gTsA&s=10'
   },
   {
     id: 'prod-14',
@@ -308,7 +308,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Concrete Shuttering Formwork', 'Bridge Pier Construction', 'Retaining Walls', 'Heavy Foundation Anchor'],
-    imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmU40znIXBYblpJ_Km57t3-Yw1QAJLQZvKkq4KLVW5zUaI7YESsFyRXKD&s=10'
   },
   {
     id: 'prod-15',
@@ -326,7 +326,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['HVAC Rectangular Ducting', 'Insulation Aluminum/GI Cladding', 'Industrial Shed Roofing', 'Control Panel Cabinets'],
-    imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDy0UlvnfNawOROnSnpiGx6MNicxr9I98N-tV7m0k3WQaAYxg49jhcA5Q&s=10'
   },
   {
     id: 'prod-16',
@@ -344,7 +344,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['DG Set Soundproofing', 'Auditorium Acoustic Walls', 'HVAC Duct Sound Damping', 'Engine Testing Cells'],
-    imageUrl: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://5.imimg.com/data5/ANDROID/Default/2023/6/317724725/EG/RF/IB/134779411/product-jpeg-500x500.jpg'
   },
   {
     id: 'prod-17',
@@ -362,7 +362,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Drywall Soundproofing', 'HVAC Duct Lining', 'Underdeck Shed Thermal Barrier', 'Multiplex Cinemas'],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2026/2/583203672/IJ/BP/OA/55291983/imgi-3-fiber-glass-wool-insulation-1-500x500.jpg'
   },
   {
     id: 'prod-18',
@@ -380,7 +380,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Thermal Power Plants', 'Industrial Boilers', 'Acoustic Generator Canopies', 'Fire Rated Partitions'],
-    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/3/QY/RV/FP/11185126/rockwool-insulation-slab-500x500.jpg'
   },
   {
     id: 'prod-19',
@@ -398,7 +398,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Control Panels & HT Switchgear', 'Substation Flooring', 'Transformer Rooms', 'Power Generation Plants'],
-    imageUrl: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://5.imimg.com/data5/BO/YH/PB/SELLER-966091/electrical-insulating-mats-isi-marked-is-15652.jpeg'
   },
   {
     id: 'prod-20',
@@ -415,7 +415,7 @@ export const PRODUCTS: ProductItem[] = [
     },
     inStock: true,
     applications: ['Hazardous Area Wiring', 'Oil & Gas Manifolds', 'Chemical Refineries'],
-    imageUrl: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=600&q=80'
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOoowLawN0d9SaIKhz3V6dOcqrg7qIa_hDsnv32LHMWQOvlaAuiHDJrlYr&s=10'
   }
 ];
 
