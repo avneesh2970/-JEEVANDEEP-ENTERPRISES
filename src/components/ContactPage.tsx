@@ -59,7 +59,7 @@ const BRANCHES: OfficeBranch[] = [
     name: 'Ghaziabad (U.P.)',
     tag: 'Branch Office',
     badge: 'NCR / Uttar Pradesh',
-    address: 'SH.NO-227 E, OPP. JEEVAN JYOTI HOSPITAL, SECTOR-12, PRATAP VIHAR, GHAZIABAD (U.P.)',
+    address: 'PLOT NO. 1 ISHI GARDEN SHIDDHARTH VIHAR, INDRAPURAM,GHAZIABAD (U.P) 201009',
     phones: ['+91 97117 35632', '+91 99585 02261', '+91 81307 97939'],
   },
   {

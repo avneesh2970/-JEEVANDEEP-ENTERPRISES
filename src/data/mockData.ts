@@ -58,6 +58,79 @@ export const CORE_VALUES: CoreValue[] = [
 ];
 
 export const PRODUCTS: ProductItem[] = [
+   {
+    id: 'prod-04',
+    name: 'XLPE Sheet (Cross-Linked Polyethylene)',
+    category: '',
+    modelCode: 'JEP-XLPE-04',
+    description: 'Closed-cell cross-linked polyethylene (XLPE) foam insulation sheet offering superior thermal resistance, zero moisture absorption, and anti-fungal properties for roofs, chilled water pipes, and HVAC ducts.',
+    grade: 'Class O Fire Retardant XLPE',
+    standards: ['BS 476 Part 6 & 7', 'ASTM C1427'],
+    specs: {
+      'Density': '33 kg/m³ ± 3 kg/m³',
+      'Operating Temp': '-40°C to +105°C',
+      'Thermal Conductivity': '0.032 W/mK @ 23°C',
+      'Thickness': '6mm, 9mm, 13mm, 19mm, 25mm, 50mm'
+    },
+    inStock: true,
+    applications: ['Underdeck Roof Insulation', 'HVAC Air Handling Units', 'Chilled Water Ducting', 'Cleanroom Acoustic Panels'],
+    imageUrl: 'https://5.imimg.com/data5/OT/TY/OK/SELLER-77812349/xlpe-insulation-sheet-500x500.jpg'
+  },
+   {
+    id: 'prod-03',
+    name: 'Nitrile Rubber Sheet and Tube (Class 0 NBR)',
+    category: '',
+    modelCode: 'JEP-NTR-03',
+    description: 'Closed-cell elastomeric Nitrile Butadiene Rubber (NBR) insulation sheets and pre-slit pipe insulation tubes for HVAC chilled water lines, refrigeration piping, and petroleum oil resistance.',
+    grade: 'Class 0 Anti-Microbial NBR',
+    standards: ['BS 476 Part 6 & 7', 'ASTM C534', 'ASTM D2000'],
+    specs: {
+      'Density': '45 kg/m³ to 70 kg/m³',
+      'Operating Temp': '-50°C to +110°C',
+      'Water Vapor Permeance': 'μ ≥ 10,000',
+      'Tube Diameter': '1/4" to 4-1/4" NB (Sheet 6mm-32mm)'
+    },
+    inStock: true,
+    applications: ['Chilled Water Piping', 'HVAC Air Handling Units', 'Oil Flange Gasket Fabrication', 'Refrigeration Lines'],
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZJbLBmQmIcHi4Fnz1gSugXpBCcoz9UE3a7vE5izxNWw2FiPpQsaxO-Hm&s=10'
+  },
+
+  {
+    id: 'prod-11',
+    name: 'S R 505 (Synthetic Rubber Adhesive)',
+    category: '',
+    modelCode: 'JEP-SR505-11',
+    description: 'Heavy duty synthetic rubber-based contact adhesive SR 505 formulated specifically for instant high-tack bonding of Nitrile rubber foam, XLPE sheets, glasswool insulation, and metal ductwork.',
+    grade: 'Industrial High Tack Contact Adhesive',
+    standards: ['IS 4835', 'ASTM D1084'],
+    specs: {
+      'Viscosity': '1800 to 2400 cps @ 30°C',
+      'Open Time': '2 to 10 minutes tack time',
+      'Coverage': '6 to 8 m² / Liter per coat',
+      'Packaging': '1 Liter, 5 Liters, 25 Liters Tins'
+    },
+    inStock: true,
+    applications: ['Nitrile Foam Duct Bonding', 'XLPE Sheet Installation', 'Underdeck Acoustic Boarding', 'Automotive Insulation'],
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6CKNZrizENYvkomc6n6MnF2-B7o719i7axsbQN3E-3qPTyGmaE6Z2uVuS&s=10'
+  },
+  {
+    id: 'prod-16',
+    name: 'Acoustic Insulation 1: Accosound Sheet',
+    category: '',
+    modelCode: 'JEP-ACCO-16',
+    description: 'Premium elastomeric viscoelastic acoustic sound barrier and vibration damping sheet Accosound engineered for high Sound Transmission Loss (STC) in auditorium walls, generator enclosures, and HVAC ducts.',
+    grade: 'High Mass Density Acoustic Grade',
+    standards: ['ISO 140-3', 'ASTM E90', 'BS EN 20140'],
+    specs: {
+      'Density': '1200 kg/m³ to 2000 kg/m³',
+      'STC Rating': '28 dB to 36 dB Noise Reduction',
+      'Thickness': '3mm / 5mm / 10mm',
+      'Roll Dimension': '1.2m Width x 10m Length'
+    },
+    inStock: true,
+    applications: ['DG Set Soundproofing', 'Auditorium Acoustic Walls', 'HVAC Duct Sound Damping', 'Engine Testing Cells'],
+    imageUrl: 'https://5.imimg.com/data5/ANDROID/Default/2023/6/317724725/EG/RF/IB/134779411/product-jpeg-500x500.jpg'
+  },
   {
     id: 'prod-01',
     name: 'Perforated Jali (Sheet Metal Mesh)',
@@ -94,42 +167,8 @@ export const PRODUCTS: ProductItem[] = [
     applications: ['Glasswool & Rockwool Facing', 'Acoustic Panel Wrapping', 'HVAC Duct Backing', 'Bituminous Roofing'],
     imageUrl: 'https://ecdn6.globalso.com/upload/p/546/image_product/2023-12/658b8bb8b779930718.jpg'
   },
-  {
-    id: 'prod-03',
-    name: 'Nitrile Rubber Sheet and Tube (Class 0 NBR)',
-    category: '',
-    modelCode: 'JEP-NTR-03',
-    description: 'Closed-cell elastomeric Nitrile Butadiene Rubber (NBR) insulation sheets and pre-slit pipe insulation tubes for HVAC chilled water lines, refrigeration piping, and petroleum oil resistance.',
-    grade: 'Class 0 Anti-Microbial NBR',
-    standards: ['BS 476 Part 6 & 7', 'ASTM C534', 'ASTM D2000'],
-    specs: {
-      'Density': '45 kg/m³ to 70 kg/m³',
-      'Operating Temp': '-50°C to +110°C',
-      'Water Vapor Permeance': 'μ ≥ 10,000',
-      'Tube Diameter': '1/4" to 4-1/4" NB (Sheet 6mm-32mm)'
-    },
-    inStock: true,
-    applications: ['Chilled Water Piping', 'HVAC Air Handling Units', 'Oil Flange Gasket Fabrication', 'Refrigeration Lines'],
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZJbLBmQmIcHi4Fnz1gSugXpBCcoz9UE3a7vE5izxNWw2FiPpQsaxO-Hm&s=10'
-  },
-  {
-    id: 'prod-04',
-    name: 'XLPE Sheet (Cross-Linked Polyethylene)',
-    category: '',
-    modelCode: 'JEP-XLPE-04',
-    description: 'Closed-cell cross-linked polyethylene (XLPE) foam insulation sheet offering superior thermal resistance, zero moisture absorption, and anti-fungal properties for roofs, chilled water pipes, and HVAC ducts.',
-    grade: 'Class O Fire Retardant XLPE',
-    standards: ['BS 476 Part 6 & 7', 'ASTM C1427'],
-    specs: {
-      'Density': '33 kg/m³ ± 3 kg/m³',
-      'Operating Temp': '-40°C to +105°C',
-      'Thermal Conductivity': '0.032 W/mK @ 23°C',
-      'Thickness': '6mm, 9mm, 13mm, 19mm, 25mm, 50mm'
-    },
-    inStock: true,
-    applications: ['Underdeck Roof Insulation', 'HVAC Air Handling Units', 'Chilled Water Ducting', 'Cleanroom Acoustic Panels'],
-    imageUrl: 'https://5.imimg.com/data5/OT/TY/OK/SELLER-77812349/xlpe-insulation-sheet-500x500.jpg'
-  },
+ 
+ 
   {
     id: 'prod-05',
     name: 'Air Bubbles Insulation Sheet (Aluminum Foil)',
@@ -238,24 +277,7 @@ export const PRODUCTS: ProductItem[] = [
     applications: ['Pharma Processing Lines', 'Oven Flange Gaskets', 'Food Grade Seals', 'High Temp Electrical Sleeve'],
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN0m9Hlclj0aL5oOVwvzKLq51eUsFZfPUnGDFbNNJMvfiwcVNkJibhRCOP&s=10'
   },
-  {
-    id: 'prod-11',
-    name: 'S R 505 (Synthetic Rubber Adhesive)',
-    category: '',
-    modelCode: 'JEP-SR505-11',
-    description: 'Heavy duty synthetic rubber-based contact adhesive SR 505 formulated specifically for instant high-tack bonding of Nitrile rubber foam, XLPE sheets, glasswool insulation, and metal ductwork.',
-    grade: 'Industrial High Tack Contact Adhesive',
-    standards: ['IS 4835', 'ASTM D1084'],
-    specs: {
-      'Viscosity': '1800 to 2400 cps @ 30°C',
-      'Open Time': '2 to 10 minutes tack time',
-      'Coverage': '6 to 8 m² / Liter per coat',
-      'Packaging': '1 Liter, 5 Liters, 25 Liters Tins'
-    },
-    inStock: true,
-    applications: ['Nitrile Foam Duct Bonding', 'XLPE Sheet Installation', 'Underdeck Acoustic Boarding', 'Automotive Insulation'],
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6CKNZrizENYvkomc6n6MnF2-B7o719i7axsbQN3E-3qPTyGmaE6Z2uVuS&s=10'
-  },
+  
   {
     id: 'prod-12',
     name: 'Glass Cloth (Woven E-Glass Fabric)',
@@ -328,24 +350,7 @@ export const PRODUCTS: ProductItem[] = [
     applications: ['HVAC Rectangular Ducting', 'Insulation Aluminum/GI Cladding', 'Industrial Shed Roofing', 'Control Panel Cabinets'],
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDy0UlvnfNawOROnSnpiGx6MNicxr9I98N-tV7m0k3WQaAYxg49jhcA5Q&s=10'
   },
-  {
-    id: 'prod-16',
-    name: 'Acoustic Insulation 1: Accosound Sheet',
-    category: '',
-    modelCode: 'JEP-ACCO-16',
-    description: 'Premium elastomeric viscoelastic acoustic sound barrier and vibration damping sheet Accosound engineered for high Sound Transmission Loss (STC) in auditorium walls, generator enclosures, and HVAC ducts.',
-    grade: 'High Mass Density Acoustic Grade',
-    standards: ['ISO 140-3', 'ASTM E90', 'BS EN 20140'],
-    specs: {
-      'Density': '1200 kg/m³ to 2000 kg/m³',
-      'STC Rating': '28 dB to 36 dB Noise Reduction',
-      'Thickness': '3mm / 5mm / 10mm',
-      'Roll Dimension': '1.2m Width x 10m Length'
-    },
-    inStock: true,
-    applications: ['DG Set Soundproofing', 'Auditorium Acoustic Walls', 'HVAC Duct Sound Damping', 'Engine Testing Cells'],
-    imageUrl: 'https://5.imimg.com/data5/ANDROID/Default/2023/6/317724725/EG/RF/IB/134779411/product-jpeg-500x500.jpg'
-  },
+  
   {
     id: 'prod-17',
     name: 'Acoustic Insulation 2: Glass Wool Roll',
